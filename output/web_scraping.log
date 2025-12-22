@@ -1,0 +1,853 @@
+2025-12-22 20:35:40,257 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 20:35:40,257 - INFO - Starting Ilboursa daily scrape...
+2025-12-22 20:35:40,257 - INFO - Trying URL: https://www.ilboursa.com/
+2025-12-22 20:35:40,967 - INFO - Found 3 tables
+2025-12-22 20:35:40,967 - INFO - Table 0: 1 rows
+2025-12-22 20:35:40,968 - INFO - Scraped 1 stocks
+2025-12-22 20:35:40,986 - INFO - Saved: C:\Users\NOUIRA\Documents\junior\BI project\output\daily_updates\updated_stocks_2025-12-22.csv
+2025-12-22 20:35:40,999 - INFO - Stocks summary:
+         Date Ticker  Close  Volume
+0  2025-12-22  ASSAD  332.0       0
+2025-12-22 20:35:43,000 - INFO - Starting TUNINDEX scrape...
+2025-12-22 20:35:43,001 - INFO - Trying TUNINDEX URL: https://www.ilboursa.com/marches/indice/TUNINDEX
+2025-12-22 20:35:43,555 - WARNING - Failed with status 404
+2025-12-22 20:35:43,556 - INFO - Trying TUNINDEX URL: https://www.ilboursa.com/fr/marches/indice/TUNINDEX
+2025-12-22 20:35:44,082 - WARNING - Failed with status 404
+2025-12-22 20:35:44,083 - WARNING - Could not scrape TUNINDEX
+2025-12-22 20:35:44,085 - WARNING - No TUNINDEX data collected
+2025-12-22 20:35:44,086 - INFO - === Web Scraper Completed ===
+
+2025-12-22 20:38:57,946 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 20:38:57,947 - INFO - Starting Ilboursa daily scrape...
+2025-12-22 20:38:57,948 - INFO - Trying URL: https://www.ilboursa.com/
+2025-12-22 20:38:58,498 - INFO - Found 3 tables
+2025-12-22 20:38:58,499 - INFO - Table 0: 1 rows
+2025-12-22 20:38:58,499 - INFO - Scraped 1 stocks
+2025-12-22 20:38:58,510 - INFO - Saved: C:\Users\NOUIRA\Documents\junior\BI project\output\daily_updates\updated_stocks_2025-12-22.csv
+2025-12-22 20:38:58,522 - INFO - Stocks summary:
+         Date Ticker  Close  Volume
+0  2025-12-22  ASSAD  332.0       0
+2025-12-22 20:39:00,523 - INFO - Starting TUNINDEX scrape...
+2025-12-22 20:39:00,524 - INFO - Trying TUNINDEX URL: https://www.ilboursa.com/marches/indice/TUNINDEX
+2025-12-22 20:39:01,062 - WARNING - Failed with status 404
+2025-12-22 20:39:01,063 - INFO - Trying TUNINDEX URL: https://www.ilboursa.com/fr/marches/indice/TUNINDEX
+2025-12-22 20:39:01,583 - WARNING - Failed with status 404
+2025-12-22 20:39:01,583 - WARNING - Could not scrape TUNINDEX
+2025-12-22 20:39:01,586 - WARNING - No TUNINDEX data collected
+2025-12-22 20:39:01,587 - INFO - === Web Scraper Completed ===
+
+2025-12-22 20:41:50,240 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 20:41:50,241 - INFO - Starting Ilboursa daily scrape with Selenium...
+2025-12-22 20:41:50,241 - INFO - ====== WebDriver manager ======
+2025-12-22 20:41:52,558 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:41:53,120 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:41:53,589 - INFO - There is no [win64] chromedriver "143.0.7499.169" for browser google-chrome "143.0.7499" in cache
+2025-12-22 20:41:53,589 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:41:54,708 - INFO - WebDriver version 143.0.7499.169 selected
+2025-12-22 20:41:54,713 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.169/win32/chromedriver-win32.zip
+2025-12-22 20:41:54,714 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.169/win32/chromedriver-win32.zip
+2025-12-22 20:41:55,186 - INFO - Driver downloading response is 200
+2025-12-22 20:41:56,402 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:41:57,073 - INFO - Driver has been saved in cache [C:\Users\NOUIRA\.wdm\drivers\chromedriver\win64\143.0.7499.169]
+2025-12-22 20:42:01,769 - INFO - Loading URL: https://www.ilboursa.com/marches/cours
+2025-12-22 20:42:03,777 - INFO - Waiting for market data to load...
+2025-12-22 20:42:06,812 - INFO - Found 4 rows in market table
+2025-12-22 20:42:06,918 - INFO - Successfully extracted 0 stocks from market table
+2025-12-22 20:42:06,918 - WARNING - No data extracted from market table
+2025-12-22 20:42:09,150 - INFO - Browser closed
+2025-12-22 20:42:09,151 - WARNING - No stocks data collected
+2025-12-22 20:42:11,152 - INFO - Starting TUNINDEX scrape with Selenium...
+2025-12-22 20:42:11,152 - INFO - ====== WebDriver manager ======
+2025-12-22 20:42:12,701 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:42:13,234 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:42:13,707 - INFO - Driver [C:\Users\NOUIRA\.wdm\drivers\chromedriver\win64\143.0.7499.169\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-22 20:42:14,844 - INFO - Loading TUNINDEX from: https://www.ilboursa.com/marches/indice/TUNINDEX
+2025-12-22 20:42:19,159 - INFO - Found TUNINDEX: Tunis
+                            Alger
+                            Casablanca
+                            Devises
+                         
+                            
+                                Choisir une valeur
+        ADWYA
+        AETECH
+        AIR LIQUIDE TUNISIE
+        AMEN BANK
+        AMS
+        ARAB TUNISIAN BANK
+        ARAB TUNISIAN LEASE
+        ARTES
+        ASSAD
+        ASSURANCES MAGHREBIA
+        ASTREE
+        ATTIJARI BANK
+        ATTIJARI LEASING
+        BANQUE DE TUNISIE
+        BANQUE NATIONALE AGRICOLE
+        BEST LEASE
+        BH ASSURANCE
+        BH BANK
+        BH LEASING
+        BIAT
+        BNA ASSURANCES
+        BTE (ADP)
+        CARTHAGE CEMENT
+        CELLCOM
+        CEREALIS
+        CIL
+        CIMENTS DE BIZERTE
+        CITY CARS
+        DELICE HOLDING
+        ELBENE
+        ELECTROSTAR
+        ENNAKL AUTOMOBILES
+        ESSOUKNA
+        EURO-CYCLES
+        GIF FILTER
+        HANNIBAL LEASE
+        HEXABYTE
+        ICF
+        LAND'OR
+        MAGASIN GENERAL
+        MAGHREBIA VIE
+        MEUBLES INTERIEURS
+        MIP
+        MONOPRIX
+        MPBS
+        NEW BODY LINE
+        OFFICE PLAST
+        ONE TECH
+        PLACEMENTS DE TUNISIE - SICAF
+        POULINA GROUP HOLDING
+        SAH
+        SANIMED
+        SERVICOM
+        SFBT
+        SIAME
+        SIMPAR
+        SIPHAT
+        SITS
+        SMART TUNISIE
+        SOCIETE CHIMIQUE ALKIMIA
+        SOMOCER
+        SOPAT
+        SOTEMAIL
+        SOTETEL
+        SOTIPAPIER
+        SOTRAPIL
+        SOTUMAG
+        SOTUVER
+        SPDIT - SICAF
+        STA
+        STAR
+        STB BANK
+        STEQ
+        STIP
+        SYPHAX AIRLINES
+        TAWASOL
+        TELNET HOLDING
+        TPR
+        TUNINDEX
+        TUNINVEST - SICAR
+        TUNIS RE
+        TUNISAIR
+        TUNISIAN BOND INDEX
+        TUNISIE LEASING & FACTORING
+        TUNISIE VALEURS
+        UADH
+        UBCI
+        UIB
+        UNIMED
+        WIFAK INT BANK
+2025-12-22 20:42:19,160 - WARNING - Could not extract TUNINDEX value
+2025-12-22 20:42:21,361 - WARNING - No TUNINDEX data collected
+2025-12-22 20:42:21,361 - INFO - === Web Scraper Completed ===
+
+2025-12-22 20:43:14,977 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 20:43:14,978 - INFO - Starting Ilboursa daily scrape with Selenium...
+2025-12-22 20:43:14,978 - INFO - ====== WebDriver manager ======
+2025-12-22 20:43:16,472 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:43:16,983 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:43:17,464 - INFO - Driver [C:\Users\NOUIRA\.wdm\drivers\chromedriver\win64\143.0.7499.169\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-22 20:43:18,589 - INFO - Loading URL: https://www.ilboursa.com/marches/cours
+2025-12-22 20:43:20,745 - INFO - Waiting for stock list to load...
+2025-12-22 20:43:22,842 - INFO - Found 91 stocks in dropdown
+2025-12-22 20:43:25,996 - INFO - Successfully extracted 0 stocks
+2025-12-22 20:43:25,997 - WARNING - No data extracted
+2025-12-22 20:43:28,201 - INFO - Browser closed
+2025-12-22 20:43:28,201 - WARNING - No stocks data collected
+2025-12-22 20:43:30,202 - INFO - Starting TUNINDEX scrape with Selenium...
+2025-12-22 20:43:30,202 - INFO - ====== WebDriver manager ======
+2025-12-22 20:43:31,500 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:43:31,990 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-22 20:43:32,489 - INFO - Driver [C:\Users\NOUIRA\.wdm\drivers\chromedriver\win64\143.0.7499.169\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-22 20:43:33,662 - INFO - Loading TUNINDEX from: https://www.ilboursa.com/marches/indice/TUNINDEX
+2025-12-22 20:43:39,089 - INFO - Found TUNINDEX: Tunis
+                            Alger
+                            Casablanca
+                            Devises
+                         
+                            
+                                Choisir une valeur
+        ADWYA
+        AETECH
+        AIR LIQUIDE TUNISIE
+        AMEN BANK
+        AMS
+        ARAB TUNISIAN BANK
+        ARAB TUNISIAN LEASE
+        ARTES
+        ASSAD
+        ASSURANCES MAGHREBIA
+        ASTREE
+        ATTIJARI BANK
+        ATTIJARI LEASING
+        BANQUE DE TUNISIE
+        BANQUE NATIONALE AGRICOLE
+        BEST LEASE
+        BH ASSURANCE
+        BH BANK
+        BH LEASING
+        BIAT
+        BNA ASSURANCES
+        BTE (ADP)
+        CARTHAGE CEMENT
+        CELLCOM
+        CEREALIS
+        CIL
+        CIMENTS DE BIZERTE
+        CITY CARS
+        DELICE HOLDING
+        ELBENE
+        ELECTROSTAR
+        ENNAKL AUTOMOBILES
+        ESSOUKNA
+        EURO-CYCLES
+        GIF FILTER
+        HANNIBAL LEASE
+        HEXABYTE
+        ICF
+        LAND'OR
+        MAGASIN GENERAL
+        MAGHREBIA VIE
+        MEUBLES INTERIEURS
+        MIP
+        MONOPRIX
+        MPBS
+        NEW BODY LINE
+        OFFICE PLAST
+        ONE TECH
+        PLACEMENTS DE TUNISIE - SICAF
+        POULINA GROUP HOLDING
+        SAH
+        SANIMED
+        SERVICOM
+        SFBT
+        SIAME
+        SIMPAR
+        SIPHAT
+        SITS
+        SMART TUNISIE
+        SOCIETE CHIMIQUE ALKIMIA
+        SOMOCER
+        SOPAT
+        SOTEMAIL
+        SOTETEL
+        SOTIPAPIER
+        SOTRAPIL
+        SOTUMAG
+        SOTUVER
+        SPDIT - SICAF
+        STA
+        STAR
+        STB BANK
+        STEQ
+        STIP
+        SYPHAX AIRLINES
+        TAWASOL
+        TELNET HOLDING
+        TPR
+        TUNINDEX
+        TUNINVEST - SICAR
+        TUNIS RE
+        TUNISAIR
+        TUNISIAN BOND INDEX
+        TUNISIE LEASING & FACTORING
+        TUNISIE VALEURS
+        UADH
+        UBCI
+        UIB
+        UNIMED
+        WIFAK INT BANK
+2025-12-22 20:43:39,089 - WARNING - Could not extract TUNINDEX value
+2025-12-22 20:44:43,414 - INFO - === Starting Alternative Scraper ===
+2025-12-22 20:44:43,415 - INFO - Trying API endpoints...
+2025-12-22 20:44:43,415 - INFO - Trying: https://www.ilboursa.com/api/v1/market/quotations
+2025-12-22 20:44:44,011 - INFO - Status: 404
+2025-12-22 20:44:44,011 - INFO - Trying: https://api.ilboursa.com/market/quotations
+2025-12-22 20:44:44,054 - INFO - Trying: https://www.ilboursa.com/api/market/quotes
+2025-12-22 20:44:44,621 - INFO - Status: 404
+2025-12-22 20:44:44,621 - INFO - Trying: https://www.ilboursa.com/api/stocks/quotes
+2025-12-22 20:44:45,147 - INFO - Status: 404
+2025-12-22 20:44:45,148 - WARNING - No API found - using fallback
+2025-12-22 20:44:45,148 - INFO - Using fallback approach: scraping by ticker...
+2025-12-22 20:44:45,148 - INFO - Fetching ADWYA...
+2025-12-22 20:44:45,693 - INFO - Fetching AETEC...
+2025-12-22 20:44:46,248 - INFO - Fetching AL...
+2025-12-22 20:44:46,777 - INFO - Fetching AB...
+2025-12-22 20:44:47,285 - INFO - Fetching AMS...
+2025-12-22 20:44:47,823 - INFO - Fetching ATB...
+2025-12-22 20:44:48,344 - INFO - Fetching ABL...
+2025-12-22 20:44:48,901 - INFO - Fetching ART...
+2025-12-22 20:44:49,439 - INFO - Fetching ASSAD...
+2025-12-22 20:44:49,948 - INFO - Fetching AMA...
+2025-12-22 20:44:50,445 - INFO - Fallback approach completed (limited data)
+2025-12-22 20:44:50,450 - INFO - === Scraper Completed ===
+2025-12-22 22:08:24,082 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:08:24,082 - INFO - Starting Ilboursa daily scrape for 91 stocks...
+2025-12-22 22:08:25,023 - INFO -   ✓ ADWYA: 5.95
+2025-12-22 22:08:26,116 - INFO -   ✓ AETEC: 0.31
+2025-12-22 22:08:27,238 - INFO -   ✓ AL: 150.02
+2025-12-22 22:08:28,295 - INFO -   ✓ AB: 47.5
+2025-12-22 22:08:29,361 - INFO -   ✓ AMS: 0.95
+2025-12-22 22:08:30,505 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:08:32,108 - INFO -   ✓ ARTES: 11.7
+2025-12-22 22:08:33,154 - INFO -   ✓ ASSAD: 3.32
+2025-12-22 22:08:35,317 - INFO -   ✓ ATL: 6.05
+2025-12-22 22:08:36,913 - INFO -   ✓ BTE: 3.55
+2025-12-22 22:08:38,640 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:08:41,301 - INFO -   ✓ BHL: 3.79
+2025-12-22 22:08:42,440 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:08:43,480 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:08:44,546 - INFO -   ✓ BTE: 3.55
+2025-12-22 22:08:45,594 - INFO -   ✓ CC: 1.87
+2025-12-22 22:08:47,770 - INFO -   ✓ CIL: 27.17
+2025-12-22 22:08:49,898 - INFO -   ✓ DH: 13.13
+2025-12-22 22:08:53,734 - INFO -   ✓ GIF: 0.44
+2025-12-22 22:08:56,481 - INFO -   ✓ ICF: 85.9
+2025-12-22 22:09:02,263 - INFO -   ✓ MIP: 0.08
+2025-12-22 22:09:04,689 - INFO -   ✓ MPBS: 8.3
+2025-12-22 22:09:10,783 - INFO -   ✓ SAH: 13.8
+2025-12-22 22:09:13,839 - INFO -   ✓ SFBT: 12.49
+2025-12-22 22:09:14,914 - INFO -   ✓ SIAME: 2.8
+2025-12-22 22:09:18,299 - INFO -   ✓ SITS: 3.11
+2025-12-22 22:09:19,794 - INFO -   ✓ SMART: 19.0
+2025-12-22 22:09:22,857 - INFO -   ✓ SOPAT: 2.05
+2025-12-22 22:09:29,409 - INFO -   ✓ SPDIT: 12.8
+2025-12-22 22:09:30,839 - INFO -   ✓ STA: 37.7
+2025-12-22 22:09:32,205 - INFO -   ✓ STAR: 58.45
+2025-12-22 22:09:33,269 - INFO -   ✓ STB: 4.1
+2025-12-22 22:09:34,362 - INFO -   ✓ STEQ: 6.5
+2025-12-22 22:09:35,835 - INFO -   ✓ STIP: 2.98
+2025-12-22 22:09:39,935 - INFO -   ✓ TPR: 10.8
+2025-12-22 22:09:46,930 - INFO -   ✓ UADH: 0.56
+2025-12-22 22:09:48,048 - INFO -   ✓ UBCI: 34.2
+2025-12-22 22:09:49,428 - INFO -   ✓ UIB: 24.9
+2025-12-22 22:09:51,698 - INFO -   ✓ WIFAK: 7.8
+2025-12-22 22:09:52,200 - INFO - Successfully extracted 39/91 stocks
+2025-12-22 22:09:52,230 - INFO - Saved: C:\Users\NOUIRA\Documents\junior\BI project\output\daily_updates\updated_stocks_2025-12-22.csv
+2025-12-22 22:09:52,262 - INFO - Stocks summary:
+         Date Ticker   Close  Volume
+0  2025-12-22  ADWYA    5.95       0
+1  2025-12-22  AETEC    0.31       0
+2  2025-12-22     AL  150.02       0
+3  2025-12-22     AB   47.50       0
+4  2025-12-22    AMS    0.95       0
+2025-12-22 22:09:54,263 - INFO - Starting TUNINDEX scrape...
+2025-12-22 22:09:54,264 - INFO - Fetching TUNINDEX from: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 22:09:54,831 - WARNING - Failed with status 404
+2025-12-22 22:09:54,833 - WARNING - No TUNINDEX data collected
+2025-12-22 22:09:54,833 - INFO - === Web Scraper Completed ===
+
+2025-12-22 22:15:53,650 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:15:53,650 - INFO - Starting Ilboursa daily scrape for 73 stocks...
+2025-12-22 22:15:54,303 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:15:55,489 - INFO -   ✓ SFBT: 12.49
+2025-12-22 22:15:56,597 - INFO -   ✓ TJARI: 65.7
+2025-12-22 22:15:57,649 - INFO -   ✓ PGH: 18.0
+2025-12-22 22:15:58,700 - INFO -   ✓ BT: 6.4
+2025-12-22 22:15:59,780 - INFO -   ✓ AB: 47.5
+2025-12-22 22:16:00,834 - INFO -   ✓ DH: 13.13
+2025-12-22 22:16:01,903 - INFO -   ✓ SAH: 13.8
+2025-12-22 22:16:03,001 - INFO -   ✓ UIB: 24.9
+2025-12-22 22:16:04,039 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:16:05,089 - INFO -   ✓ OTH: 8.85
+2025-12-22 22:16:06,183 - INFO -   ✓ UBCI: 34.2
+2025-12-22 22:16:07,309 - INFO -   ✓ CC: 1.87
+2025-12-22 22:16:08,381 - INFO -   ✓ STB: 4.1
+2025-12-22 22:16:09,418 - INFO -   ✓ STAR: 58.45
+2025-12-22 22:16:10,506 - INFO -   ✓ SOTUV: 13.9
+2025-12-22 22:16:11,615 - INFO -   ✓ TPR: 10.8
+2025-12-22 22:16:35,633 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:16:35,634 - INFO - Starting Ilboursa daily scrape for 73 stocks...
+2025-12-22 22:16:36,178 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:16:37,221 - INFO -   ✓ SFBT: 12.49
+2025-12-22 22:16:38,265 - INFO -   ✓ TJARI: 65.7
+2025-12-22 22:16:39,419 - INFO -   ✓ PGH: 18.0
+2025-12-22 22:16:40,482 - INFO -   ✓ BT: 6.4
+2025-12-22 22:16:41,536 - INFO -   ✓ AB: 47.5
+2025-12-22 22:16:42,607 - INFO -   ✓ DH: 13.13
+2025-12-22 22:16:43,646 - INFO -   ✓ SAH: 13.8
+2025-12-22 22:16:44,755 - INFO -   ✓ UIB: 24.9
+2025-12-22 22:16:45,821 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:16:46,962 - INFO -   ✓ OTH: 8.85
+2025-12-22 22:16:47,985 - INFO -   ✓ UBCI: 34.2
+2025-12-22 22:16:49,043 - INFO -   ✓ CC: 1.87
+2025-12-22 22:16:50,086 - INFO -   ✓ STB: 4.1
+2025-12-22 22:16:51,195 - INFO -   ✓ STAR: 58.45
+2025-12-22 22:16:52,232 - INFO -   ✓ SOTUV: 13.9
+2025-12-22 22:16:53,585 - INFO -   ✓ TPR: 10.8
+2025-12-22 22:16:54,999 - INFO -   ✓ BH: 10.39
+2025-12-22 22:16:56,548 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:16:58,186 - INFO -   ✓ NAKL: 15.0
+2025-12-22 22:17:00,240 - INFO -   ✓ ARTES: 11.7
+2025-12-22 22:17:02,260 - INFO -   ✓ SPDIT: 12.8
+2025-12-22 22:17:04,082 - INFO -   ✓ CITY: 19.5
+2025-12-22 22:17:05,704 - INFO -   ✓ TLS: 32.15
+2025-12-22 22:17:07,232 - INFO -   ✓ UMED: 9.06
+2025-12-22 22:17:08,857 - INFO -   ✓ BNASS: 3.27
+2025-12-22 22:17:10,564 - INFO -   ✓ AST: 46.0
+2025-12-22 22:17:12,167 - INFO -   ✓ ASSMA: 56.5
+2025-12-22 22:17:13,693 - INFO -   ✓ AL: 150.02
+2025-12-22 22:17:15,236 - INFO -   ✓ WIFAK: 7.8
+2025-12-22 22:17:16,780 - INFO -   ✓ LNDOR: 14.74
+2025-12-22 22:17:18,300 - INFO -   ✓ ATL: 6.05
+2025-12-22 22:17:19,816 - INFO -   ✓ SMART: 19.0
+2025-12-22 22:17:21,290 - INFO -   ✓ TRE: 9.49
+2025-12-22 22:17:22,904 - INFO -   ✓ CIL: 27.17
+2025-12-22 22:17:24,373 - INFO -   ✓ ICF: 85.9
+2025-12-22 22:17:25,820 - INFO -   ✓ AMV: 6.8
+2025-12-22 22:17:27,378 - INFO -   ✓ MPBS: 8.3
+2025-12-22 22:17:29,145 - INFO -   ✓ MAG: 10.6
+2025-12-22 22:17:30,766 - INFO -   ✓ BHASS: 63.0
+2025-12-22 22:17:32,280 - INFO -   ✓ MNP: 6.2
+2025-12-22 22:17:34,141 - INFO -   ✓ ECYCL: 12.61
+2025-12-22 22:17:35,765 - INFO -   ✓ MGR: 8.99
+2025-12-22 22:17:37,587 - INFO -   ✓ SOTEM: 3.0
+2025-12-22 22:17:39,142 - INFO -   ✓ TGH: 0.85
+2025-12-22 22:17:40,637 - INFO -   ✓ STPIL: 22.39
+2025-12-22 22:17:42,563 - INFO -   ✓ HL: 7.6
+2025-12-22 22:17:44,152 - INFO -   ✓ TLNET: 6.8
+2025-12-22 22:17:45,660 - INFO -   ✓ STPAP: 2.83
+2025-12-22 22:17:47,233 - INFO -   ✓ TJL: 29.0
+2025-12-22 22:17:48,844 - INFO -   ✓ ASSAD: 3.32
+2025-12-22 22:17:50,412 - INFO -   ✓ STA: 37.7
+2025-12-22 22:17:52,003 - INFO -   ✓ BL: 2.2
+2025-12-22 22:17:53,582 - INFO -   ✓ SITS: 3.11
+2025-12-22 22:17:55,184 - INFO -   ✓ ALKIM: 12.55
+2025-12-22 22:17:56,849 - INFO -   ✓ SIAME: 2.8
+2025-12-22 22:17:59,409 - INFO -   ✓ TAIR: 0.34
+2025-12-22 22:18:01,005 - INFO -   ✓ PLAST: 1.84
+2025-12-22 22:18:02,535 - INFO -   ✓ SAM: 4.7
+2025-12-22 22:18:04,032 - INFO -   ✓ BHL: 3.79
+2025-12-22 22:18:05,493 - INFO -   ✓ SOTET: 5.07
+2025-12-22 22:18:06,880 - INFO -   ✓ SCB: 0.5
+2025-12-22 22:18:08,324 - INFO -   ✓ UADH: 0.56
+2025-12-22 22:18:09,750 - INFO -   ✓ SOMOC: 0.43
+2025-12-22 22:18:11,421 - INFO -   ✓ NBL: 4.08
+2025-12-22 22:18:12,963 - INFO -   ✓ SOKNA: 3.15
+2025-12-22 22:18:14,514 - INFO -   ✓ CELL: 3.1
+2025-12-22 22:18:16,031 - INFO -   ✓ STIP: 2.98
+2025-12-22 22:18:17,443 - INFO -   ✓ SIPHA: 4.5
+2025-12-22 22:18:20,682 - INFO -   ✓ AETEC: 0.31
+2025-12-22 22:18:21,183 - INFO - Successfully extracted 70/73 stocks
+2025-12-22 22:18:21,354 - INFO - Saved: C:\Users\NOUIRA\Documents\junior\BI project\output\daily_updates\updated_stocks_2025-12-22.csv
+2025-12-22 22:18:21,417 - INFO - Stocks summary:
+         Date Ticker   Close  Volume
+0  2025-12-22   BIAT  107.49       0
+1  2025-12-22   SFBT   12.49       0
+2  2025-12-22  TJARI   65.70       0
+3  2025-12-22    PGH   18.00       0
+4  2025-12-22     BT    6.40       0
+2025-12-22 22:18:23,418 - INFO - Starting TUNINDEX scrape...
+2025-12-22 22:18:23,419 - INFO - Fetching TUNINDEX from: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 22:18:24,437 - WARNING - Failed with status 404
+2025-12-22 22:18:24,454 - WARNING - No TUNINDEX data collected
+2025-12-22 22:18:24,455 - INFO - === Web Scraper Completed ===
+
+2025-12-22 22:21:20,201 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:21:20,201 - INFO - Starting Ilboursa daily scrape for 73 stocks...
+2025-12-22 22:21:20,826 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:21:21,935 - INFO -   ✓ SFBT: 12.49
+2025-12-22 22:21:23,016 - INFO -   ✓ TJARI: 65.7
+2025-12-22 22:21:24,162 - INFO -   ✓ PGH: 18.0
+2025-12-22 22:21:25,266 - INFO -   ✓ BT: 6.4
+2025-12-22 22:21:26,308 - INFO -   ✓ AB: 47.5
+2025-12-22 22:21:27,384 - INFO -   ✓ DH: 13.13
+2025-12-22 22:21:28,605 - INFO -   ✓ SAH: 13.8
+2025-12-22 22:21:30,029 - INFO -   ✓ UIB: 24.9
+2025-12-22 22:21:31,389 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:21:32,793 - INFO -   ✓ OTH: 8.85
+2025-12-22 22:21:34,297 - INFO -   ✓ UBCI: 34.2
+2025-12-22 22:21:35,760 - INFO -   ✓ CC: 1.87
+2025-12-22 22:21:37,242 - INFO -   ✓ STB: 4.1
+2025-12-22 22:21:38,931 - INFO -   ✓ STAR: 58.45
+2025-12-22 22:21:40,412 - INFO -   ✓ SOTUV: 13.9
+2025-12-22 22:21:41,490 - INFO -   ✓ TPR: 10.8
+2025-12-22 22:21:42,843 - INFO -   ✓ BH: 10.39
+2025-12-22 22:21:44,203 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:21:45,279 - INFO -   ✓ NAKL: 15.0
+2025-12-22 22:21:46,387 - INFO -   ✓ ARTES: 11.7
+2025-12-22 22:21:47,492 - INFO -   ✓ SPDIT: 12.8
+2025-12-22 22:21:48,572 - INFO -   ✓ CITY: 19.5
+2025-12-22 22:21:49,666 - INFO -   ✓ TLS: 32.15
+2025-12-22 22:21:50,839 - INFO -   ✓ UMED: 9.06
+2025-12-22 22:21:51,915 - INFO -   ✓ BNASS: 3.27
+2025-12-22 22:21:52,987 - INFO -   ✓ AST: 46.0
+2025-12-22 22:21:54,035 - INFO -   ✓ ASSMA: 56.5
+2025-12-22 22:21:55,077 - INFO -   ✓ AL: 150.02
+2025-12-22 22:21:56,143 - INFO -   ✓ WIFAK: 7.8
+2025-12-22 22:22:06,720 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:22:06,720 - INFO - Starting Ilboursa daily scrape for 73 stocks...
+2025-12-22 22:22:07,278 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:22:08,336 - INFO -   ✓ SFBT: 12.49
+2025-12-22 22:22:09,409 - INFO -   ✓ TJARI: 65.7
+2025-12-22 22:22:10,474 - INFO -   ✓ PGH: 18.0
+2025-12-22 22:22:11,675 - INFO -   ✓ BT: 6.4
+2025-12-22 22:22:12,835 - INFO -   ✓ AB: 47.5
+2025-12-22 22:22:13,916 - INFO -   ✓ DH: 13.13
+2025-12-22 22:22:15,025 - INFO -   ✓ SAH: 13.8
+2025-12-22 22:22:16,106 - INFO -   ✓ UIB: 24.9
+2025-12-22 22:22:17,448 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:22:18,995 - INFO -   ✓ OTH: 8.85
+2025-12-22 22:22:20,409 - INFO -   ✓ UBCI: 34.2
+2025-12-22 22:22:22,000 - INFO -   ✓ CC: 1.87
+2025-12-22 22:22:23,481 - INFO -   ✓ STB: 4.1
+2025-12-22 22:22:24,940 - INFO -   ✓ STAR: 58.45
+2025-12-22 22:22:26,401 - INFO -   ✓ SOTUV: 13.9
+2025-12-22 22:22:28,014 - INFO -   ✓ TPR: 10.8
+2025-12-22 22:22:29,484 - INFO -   ✓ BH: 10.39
+2025-12-22 22:22:30,539 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:22:31,613 - INFO -   ✓ NAKL: 15.0
+2025-12-22 22:22:32,661 - INFO -   ✓ ARTES: 11.7
+2025-12-22 22:22:33,791 - INFO -   ✓ SPDIT: 12.8
+2025-12-22 22:22:34,872 - INFO -   ✓ CITY: 19.5
+2025-12-22 22:22:35,909 - INFO -   ✓ TLS: 32.15
+2025-12-22 22:22:36,956 - INFO -   ✓ UMED: 9.06
+2025-12-22 22:22:37,989 - INFO -   ✓ BNASS: 3.27
+2025-12-22 22:22:39,048 - INFO -   ✓ AST: 46.0
+2025-12-22 22:22:40,130 - INFO -   ✓ ASSMA: 56.5
+2025-12-22 22:22:41,301 - INFO -   ✓ AL: 150.02
+2025-12-22 22:22:42,769 - INFO -   ✓ WIFAK: 7.8
+2025-12-22 22:22:44,366 - INFO -   ✓ LNDOR: 14.74
+2025-12-22 22:22:45,886 - INFO -   ✓ ATL: 6.05
+2025-12-22 22:22:47,454 - INFO -   ✓ SMART: 19.0
+2025-12-22 22:22:48,904 - INFO -   ✓ TRE: 9.49
+2025-12-22 22:22:50,353 - INFO -   ✓ CIL: 27.17
+2025-12-22 22:22:51,875 - INFO -   ✓ ICF: 85.9
+2025-12-22 22:22:53,422 - INFO -   ✓ AMV: 6.8
+2025-12-22 22:22:54,812 - INFO -   ✓ MPBS: 8.3
+2025-12-22 22:22:56,235 - INFO -   ✓ MAG: 10.6
+2025-12-22 22:22:57,887 - INFO -   ✓ BHASS: 63.0
+2025-12-22 22:22:59,271 - INFO -   ✓ MNP: 6.2
+2025-12-22 22:23:00,715 - INFO -   ✓ ECYCL: 12.61
+2025-12-22 22:23:02,175 - INFO -   ✓ MGR: 8.99
+2025-12-22 22:23:03,668 - INFO -   ✓ SOTEM: 3.0
+2025-12-22 22:23:05,169 - INFO -   ✓ TGH: 0.85
+2025-12-22 22:23:06,712 - INFO -   ✓ STPIL: 22.39
+2025-12-22 22:23:08,321 - INFO -   ✓ HL: 7.6
+2025-12-22 22:23:09,788 - INFO -   ✓ TLNET: 6.8
+2025-12-22 22:23:11,249 - INFO -   ✓ STPAP: 2.83
+2025-12-22 22:23:12,663 - INFO -   ✓ TJL: 29.0
+2025-12-22 22:23:14,141 - INFO -   ✓ ASSAD: 3.32
+2025-12-22 22:23:15,648 - INFO -   ✓ STA: 37.7
+2025-12-22 22:23:17,215 - INFO -   ✓ BL: 2.2
+2025-12-22 22:23:18,766 - INFO -   ✓ SITS: 3.11
+2025-12-22 22:23:20,233 - INFO -   ✓ ALKIM: 12.55
+2025-12-22 22:23:21,793 - INFO -   ✓ SIAME: 2.8
+2025-12-22 22:23:24,443 - INFO -   ✓ TAIR: 0.34
+2025-12-22 22:23:26,073 - INFO -   ✓ PLAST: 1.84
+2025-12-22 22:23:27,521 - INFO -   ✓ SAM: 4.7
+2025-12-22 22:23:29,018 - INFO -   ✓ BHL: 3.79
+2025-12-22 22:23:30,436 - INFO -   ✓ SOTET: 5.07
+2025-12-22 22:23:31,842 - INFO -   ✓ SCB: 0.5
+2025-12-22 22:23:33,267 - INFO -   ✓ UADH: 0.56
+2025-12-22 22:23:34,663 - INFO -   ✓ SOMOC: 0.43
+2025-12-22 22:23:36,066 - INFO -   ✓ NBL: 4.08
+2025-12-22 22:23:37,508 - INFO -   ✓ SOKNA: 3.15
+2025-12-22 22:23:39,082 - INFO -   ✓ CELL: 3.1
+2025-12-22 22:23:40,637 - INFO -   ✓ STIP: 2.98
+2025-12-22 22:23:42,119 - INFO -   ✓ SIPHA: 4.5
+2025-12-22 22:23:45,527 - INFO -   ✓ AETEC: 0.31
+2025-12-22 22:23:46,028 - INFO - Successfully extracted 70/73 stocks
+2025-12-22 22:23:46,069 - INFO - Saved: C:\Users\NOUIRA\Documents\junior\BI project\output\daily_updates\updated_stocks_2025-12-22.csv
+2025-12-22 22:23:46,106 - INFO - Stocks summary:
+         Date Ticker   Close  Volume
+0  2025-12-22   BIAT  107.49     186
+1  2025-12-22   SFBT   12.49       0
+2  2025-12-22  TJARI   65.70     173
+3  2025-12-22    PGH   18.00     256
+4  2025-12-22     BT    6.40       0
+2025-12-22 22:23:48,107 - INFO - Starting TUNINDEX scrape...
+2025-12-22 22:23:48,108 - INFO - Fetching TUNINDEX from: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 22:23:49,075 - WARNING - Failed with status 404
+2025-12-22 22:23:49,078 - WARNING - No TUNINDEX data collected
+2025-12-22 22:23:49,079 - INFO - === Web Scraper Completed ===
+
+2025-12-22 22:49:58,581 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:49:58,581 - INFO - Starting Ilboursa daily scrape for 87 stocks...
+2025-12-22 22:49:59,315 - INFO -   ✓ ADWYA: 5.95
+2025-12-22 22:50:00,928 - INFO -   ✓ ALKIM: 12.55
+2025-12-22 22:50:02,010 - INFO -   ✓ AL: 150.02
+2025-12-22 22:50:03,162 - INFO -   ✓ AB: 47.5
+2025-12-22 22:50:04,300 - INFO -   ✓ AMS: 0.95
+2025-12-22 22:50:05,390 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:50:06,465 - INFO -   ✓ ATL: 6.05
+2025-12-22 22:50:07,556 - INFO -   ✓ ARTES: 11.7
+2025-12-22 22:50:08,664 - INFO -   ✓ ASSAD: 3.32
+2025-12-22 22:50:10,090 - INFO -   ✓ ASSMA: 56.5
+2025-12-22 22:50:11,738 - INFO -   ✓ AST: 46.0
+2025-12-22 22:50:13,227 - INFO -   ✓ TJARI: 65.7
+2025-12-22 22:50:14,757 - INFO -   ✓ TJL: 29.0
+2025-12-22 22:50:16,295 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:50:17,854 - INFO -   ✓ BH: 10.39
+2025-12-22 22:50:19,566 - INFO -   ✓ BHASS: 63.0
+2025-12-22 22:50:21,080 - INFO -   ✓ BHL: 3.79
+2025-12-22 22:50:22,568 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:50:24,042 - INFO -   ✓ BNASS: 3.27
+2025-12-22 22:50:25,512 - INFO -   ✓ BT: 6.4
+2025-12-22 22:50:27,106 - INFO -   ✓ BTE: 3.55
+2025-12-22 22:50:28,648 - INFO -   ✓ CC: 1.87
+2025-12-22 22:50:29,739 - INFO -   ✓ CELL: 3.1
+2025-12-22 22:50:30,851 - INFO -   ✓ CREAL: 13.3
+2025-12-22 22:50:31,960 - INFO -   ✓ CIL: 27.17
+2025-12-22 22:50:33,027 - INFO -   ✓ SCB: 0.5
+2025-12-22 22:50:34,134 - INFO -   ✓ CITY: 19.5
+2025-12-22 22:50:35,220 - INFO -   ✓ DH: 13.13
+2025-12-22 22:50:36,401 - INFO -   ✓ ELBEN: 2.28
+2025-12-22 22:50:37,500 - INFO -   ✓ LSTR: 0.3
+2025-12-22 22:50:38,624 - INFO -   ✓ NAKL: 15.0
+2025-12-22 22:50:40,291 - INFO -   ✓ ECYCL: 12.61
+2025-12-22 22:50:41,370 - INFO -   ✓ GIF: 0.44
+2025-12-22 22:50:42,391 - INFO -   ✓ HL: 7.6
+2025-12-22 22:50:43,992 - INFO -   ✓ ICF: 85.9
+2025-12-22 22:50:45,063 - INFO -   ✓ LNDOR: 14.74
+2025-12-22 22:50:46,129 - INFO -   ✓ MAG: 10.6
+2025-12-22 22:50:47,214 - INFO -   ✓ AMV: 6.8
+2025-12-22 22:50:48,283 - INFO -   ✓ SAM: 4.7
+2025-12-22 22:50:49,374 - INFO -   ✓ MIP: 0.08
+2025-12-22 22:50:50,416 - INFO -   ✓ MNP: 6.2
+2025-12-22 22:50:51,498 - INFO -   ✓ MPBS: 8.3
+2025-12-22 22:51:04,585 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:51:04,585 - INFO - Starting Ilboursa daily scrape for 87 stocks...
+2025-12-22 22:51:05,182 - INFO -   ✓ ADWYA: 5.95
+2025-12-22 22:51:06,710 - INFO -   ✓ ALKIM: 12.55
+2025-12-22 22:51:07,770 - INFO -   ✓ AL: 150.02
+2025-12-22 22:51:08,771 - INFO -   ✓ AB: 47.5
+2025-12-22 22:51:09,839 - INFO -   ✓ AMS: 0.95
+2025-12-22 22:51:10,890 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:51:11,916 - INFO -   ✓ ATL: 6.05
+2025-12-22 22:51:12,978 - INFO -   ✓ ARTES: 11.7
+2025-12-22 22:51:14,040 - INFO -   ✓ ASSAD: 3.32
+2025-12-22 22:51:15,085 - INFO -   ✓ ASSMA: 56.5
+2025-12-22 22:51:16,079 - INFO -   ✓ AST: 46.0
+2025-12-22 22:51:17,135 - INFO -   ✓ TJARI: 65.7
+2025-12-22 22:51:18,142 - INFO -   ✓ TJL: 29.0
+2025-12-22 22:51:19,216 - INFO -   ✓ BIAT: 107.49
+2025-12-22 22:51:20,292 - INFO -   ✓ BH: 10.39
+2025-12-22 22:51:21,445 - INFO -   ✓ BHASS: 63.0
+2025-12-22 22:51:22,865 - INFO -   ✓ BHL: 3.79
+2025-12-22 22:51:24,315 - INFO -   ✓ BNA: 12.05
+2025-12-22 22:51:25,791 - INFO -   ✓ BNASS: 3.27
+2025-12-22 22:51:27,227 - INFO -   ✓ BT: 6.4
+2025-12-22 22:51:28,741 - INFO -   ✓ BTE: 3.55
+2025-12-22 22:51:30,095 - INFO -   ✓ CC: 1.87
+2025-12-22 22:51:31,435 - INFO -   ✓ CELL: 3.1
+2025-12-22 22:51:32,856 - INFO -   ✓ CREAL: 13.3
+2025-12-22 22:51:34,283 - INFO -   ✓ CIL: 27.17
+2025-12-22 22:51:35,654 - INFO -   ✓ SCB: 0.5
+2025-12-22 22:51:36,693 - INFO -   ✓ CITY: 19.5
+2025-12-22 22:51:37,731 - INFO -   ✓ DH: 13.13
+2025-12-22 22:51:38,753 - INFO -   ✓ ELBEN: 2.28
+2025-12-22 22:51:39,888 - INFO -   ✓ LSTR: 0.3
+2025-12-22 22:51:40,953 - INFO -   ✓ NAKL: 15.0
+2025-12-22 22:51:42,487 - INFO -   ✓ ECYCL: 12.61
+2025-12-22 22:51:43,567 - INFO -   ✓ GIF: 0.44
+2025-12-22 22:51:44,886 - INFO -   ✓ HL: 7.6
+2025-12-22 22:51:47,294 - INFO -   ✓ ICF: 85.9
+2025-12-22 22:51:48,799 - INFO -   ✓ LNDOR: 14.74
+2025-12-22 22:51:50,274 - INFO -   ✓ MAG: 10.6
+2025-12-22 22:51:51,781 - INFO -   ✓ AMV: 6.8
+2025-12-22 22:51:53,293 - INFO -   ✓ SAM: 4.7
+2025-12-22 22:51:54,670 - INFO -   ✓ MIP: 0.08
+2025-12-22 22:51:56,067 - INFO -   ✓ MNP: 6.2
+2025-12-22 22:51:57,517 - INFO -   ✓ MPBS: 8.3
+2025-12-22 22:51:58,934 - INFO -   ✓ NBL: 4.08
+2025-12-22 22:52:00,384 - INFO -   ✓ PLAST: 1.84
+2025-12-22 22:52:01,779 - INFO -   ✓ OTH: 8.85
+2025-12-22 22:52:03,144 - INFO -   ✓ PX1: 0.13
+2025-12-22 22:52:04,457 - INFO -   ✓ PGH: 18.0
+2025-12-22 22:52:05,950 - INFO -   ✓ SAH: 13.8
+2025-12-22 22:52:07,407 - INFO -   ✓ SMD: 0.59
+2025-12-22 22:52:08,756 - INFO -   ✓ SERVI: 0.22
+2025-12-22 22:52:10,133 - INFO -   ✓ SFBT: 12.49
+2025-12-22 22:52:11,600 - INFO -   ✓ SIAME: 2.8
+2025-12-22 22:52:13,768 - INFO -   ✓ SIPHA: 4.5
+2025-12-22 22:52:15,206 - INFO -   ✓ SITS: 3.11
+2025-12-22 22:52:16,667 - INFO -   ✓ SMART: 19.0
+2025-12-22 22:52:18,171 - INFO -   ✓ SOPAT: 2.05
+2025-12-22 22:52:19,773 - INFO -   ✓ SOMOC: 0.43
+2025-12-22 22:52:21,128 - INFO -   ✓ STPAP: 2.83
+2025-12-22 22:52:22,533 - INFO -   ✓ SOTEM: 3.0
+2025-12-22 22:52:23,681 - INFO -   ✓ SOTET: 5.07
+2025-12-22 22:52:24,842 - INFO -   ✓ MGR: 8.99
+2025-12-22 22:52:25,981 - INFO -   ✓ SOTUV: 13.9
+2025-12-22 22:52:27,272 - INFO -   ✓ SPDIT: 12.8
+2025-12-22 22:52:28,343 - INFO -   ✓ STA: 37.7
+2025-12-22 22:52:29,382 - INFO -   ✓ STAR: 58.45
+2025-12-22 22:52:30,395 - INFO -   ✓ STB: 4.1
+2025-12-22 22:52:31,429 - INFO -   ✓ STEQ: 6.5
+2025-12-22 22:52:32,474 - INFO -   ✓ STIP: 2.98
+2025-12-22 22:52:33,521 - INFO -   ✓ SPHAX: 3.9
+2025-12-22 22:52:34,568 - INFO -   ✓ TGH: 0.85
+2025-12-22 22:52:35,611 - INFO -   ✓ TLNET: 6.8
+2025-12-22 22:52:36,670 - INFO -   ✓ TPR: 10.8
+2025-12-22 22:52:37,740 - INFO -   ✓ TRE: 9.49
+2025-12-22 22:52:38,799 - INFO -   ✓ TAIR: 0.34
+2025-12-22 22:52:39,802 - INFO -   ✓ TLS: 32.15
+2025-12-22 22:52:40,815 - INFO -   ✓ TINV: 42.0
+2025-12-22 22:52:41,850 - INFO -   ✓ TBIDX: 231.68
+2025-12-22 22:52:42,927 - INFO -   ✓ TVAL: 17.48
+2025-12-22 22:52:44,020 - INFO -   ✓ UADH: 0.56
+2025-12-22 22:52:45,082 - INFO -   ✓ UBCI: 34.2
+2025-12-22 22:52:46,149 - INFO -   ✓ UIB: 24.9
+2025-12-22 22:52:47,213 - INFO -   ✓ UMED: 9.06
+2025-12-22 22:52:48,228 - INFO -   ✓ WIFAK: 7.8
+2025-12-22 22:52:48,729 - INFO - Successfully extracted 83/87 stocks
+2025-12-22 22:52:48,764 - INFO - Saved: C:\Users\NOUIRA\Documents\junior\BI project\output\daily_updates\updated_stocks_2025-12-22.csv
+2025-12-22 22:52:48,786 - INFO - Stocks summary:
+         Date Ticker   Close  Volume
+0  2025-12-22  ADWYA    5.95       0
+1  2025-12-22  ALKIM   12.55       0
+2  2025-12-22     AL  150.02       0
+3  2025-12-22     AB   47.50     163
+4  2025-12-22    AMS    0.95       0
+2025-12-22 22:52:50,787 - INFO - Starting TUNINDEX scrape...
+2025-12-22 22:52:50,787 - INFO - Fetching TUNINDEX from: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 22:52:51,309 - WARNING - Failed with status 404
+2025-12-22 22:52:51,312 - WARNING - No TUNINDEX data collected
+2025-12-22 22:52:51,313 - INFO - === Web Scraper Completed ===
+
+2025-12-22 22:54:49,399 - INFO - === TUNVESTI Web Scraper Started ===
+2025-12-22 22:54:49,399 - INFO - Starting Ilboursa daily scrape for 90 stocks...
+2025-12-22 22:54:50,070 - INFO -   ✓ ADWYA: 5.95
+2025-12-22 22:54:51,186 - INFO -   ✓ AETEC: 0.31
+2025-12-22 22:54:52,499 - INFO -   ✓ AL: 150.02
+2025-12-22 22:54:53,653 - INFO -   ✓ AB: 47.5
+2025-12-22 22:54:54,768 - INFO -   ✓ AMS: 0.95
+2025-12-22 22:54:55,836 - INFO -   ✓ ATB: 3.7
+2025-12-22 22:54:56,958 - INFO -   ✓ ATL: 6.05
+2025-12-22 22:54:58,047 - INFO -   ✓ ARTES: 11.7
+2025-12-22 23:06:19,776 - INFO - ======================================================================
+2025-12-22 23:06:19,776 - INFO - Starting Sector Classification Scraping
+2025-12-22 23:06:19,776 - INFO - ======================================================================
+2025-12-22 23:06:19,777 - INFO - Processing 90 verified tickers
+2025-12-22 23:06:19,777 - INFO - Attempting to scrape BVMT website...
+2025-12-22 23:06:30,193 - WARNING - BVMT scraping failed: HTTPSConnectionPool(host='www.bvmt.com.tn', port=443): Read timed out. (read timeout=10)
+2025-12-22 23:06:30,194 - INFO - Falling back to verified sector mapping...
+2025-12-22 23:06:30,194 - INFO - Applying verified sector mapping...
+2025-12-22 23:06:30,194 - INFO - Total sectors mapped: 90
+2025-12-22 23:06:30,206 - INFO - 
+======================================================================
+2025-12-22 23:06:30,206 - INFO - SECTOR DISTRIBUTION
+2025-12-22 23:06:30,206 - INFO - ======================================================================
+2025-12-22 23:06:30,229 - INFO - Manufacturing       :  12 stocks ( 13.3%)
+2025-12-22 23:06:30,231 - INFO - Banking             :  12 stocks ( 13.3%)
+2025-12-22 23:06:30,232 - INFO - Retail              :  10 stocks ( 11.1%)
+2025-12-22 23:06:30,232 - INFO - Finance             :   6 stocks (  6.7%)
+2025-12-22 23:06:30,233 - INFO - Insurance           :   5 stocks (  5.6%)
+2025-12-22 23:06:30,233 - INFO - Telecom             :   5 stocks (  5.6%)
+2025-12-22 23:06:30,233 - INFO - Transport           :   5 stocks (  5.6%)
+2025-12-22 23:06:30,233 - INFO - Real Estate         :   5 stocks (  5.6%)
+2025-12-22 23:06:30,233 - INFO - Pharmaceutical      :   4 stocks (  4.4%)
+2025-12-22 23:06:30,234 - INFO - Construction        :   4 stocks (  4.4%)
+2025-12-22 23:06:30,234 - INFO - Distribution        :   3 stocks (  3.3%)
+2025-12-22 23:06:30,234 - INFO - Indices             :   2 stocks (  2.2%)
+2025-12-22 23:06:30,235 - INFO - Utilities           :   2 stocks (  2.2%)
+2025-12-22 23:06:30,235 - INFO - Tourism             :   2 stocks (  2.2%)
+2025-12-22 23:06:30,235 - INFO - Diversified         :   2 stocks (  2.2%)
+2025-12-22 23:06:30,235 - INFO - Technology          :   1 stocks (  1.1%)
+2025-12-22 23:06:30,236 - INFO - Unclassified        :   1 stocks (  1.1%)
+2025-12-22 23:06:30,236 - INFO - Recycling           :   1 stocks (  1.1%)
+2025-12-22 23:06:30,236 - INFO - Chemicals           :   1 stocks (  1.1%)
+2025-12-22 23:06:30,236 - INFO - Media               :   1 stocks (  1.1%)
+2025-12-22 23:06:30,236 - INFO - Holding             :   1 stocks (  1.1%)
+2025-12-22 23:06:30,236 - INFO - Food & Beverage     :   1 stocks (  1.1%)
+2025-12-22 23:06:30,237 - INFO - Paper & Packaging   :   1 stocks (  1.1%)
+2025-12-22 23:06:30,237 - INFO - Infrastructure      :   1 stocks (  1.1%)
+2025-12-22 23:06:30,237 - INFO - Hospitality         :   1 stocks (  1.1%)
+2025-12-22 23:06:30,238 - INFO - Investment          :   1 stocks (  1.1%)
+2025-12-22 23:06:30,238 - INFO - 
+======================================================================
+2025-12-22 23:06:30,238 - INFO - DATA VALIDATION
+2025-12-22 23:06:30,238 - INFO - ======================================================================
+2025-12-22 23:06:30,244 - INFO - ✓ No duplicate tickers
+2025-12-22 23:06:30,250 - INFO - ✓ No missing values
+2025-12-22 23:06:30,254 - INFO - ✓ All ticker formats valid
+2025-12-22 23:06:30,268 - INFO - 
+✅ Sector mapping saved to: C:\Users\NOUIRA\Documents\junior\BI project\data\sector_mapping.csv
+2025-12-22 23:06:30,268 - INFO - 
+======================================================================
+2025-12-22 23:06:30,269 - INFO - SAMPLE DATA (First 10 rows)
+2025-12-22 23:06:30,269 - INFO - ======================================================================
+2025-12-22 23:06:30,277 - INFO - Ticker         Sector           Source
+ ADWYA Pharmaceutical Verified Mapping
+ AETEC         Retail Verified Mapping
+    AL        Telecom Verified Mapping
+    AB        Banking Verified Mapping
+   AMS   Construction Verified Mapping
+   ATB        Banking Verified Mapping
+   ATL        Telecom Verified Mapping
+ ARTES     Technology Verified Mapping
+ ASSAD  Manufacturing Verified Mapping
+ ASSMA      Insurance Verified Mapping
+2025-12-22 23:06:30,277 - INFO - 
+======================================================================
+2025-12-22 23:06:30,277 - INFO - ✅ SECTOR CLASSIFICATION COMPLETE
+2025-12-22 23:06:30,277 - INFO - ======================================================================
+2025-12-22 23:06:30,278 - INFO - Total stocks classified: 90
+2025-12-22 23:06:30,280 - INFO - Total sectors: 26
+2025-12-22 23:06:30,281 - INFO - Output file: C:\Users\NOUIRA\Documents\junior\BI project\data\sector_mapping.csv
+2025-12-22 23:06:30,281 - INFO - 
+✅ Script completed successfully!
+2025-12-22 23:06:49,825 - INFO - ======================================================================
+2025-12-22 23:06:49,825 - INFO - Starting TUNINDEX Daily Data Collection
+2025-12-22 23:06:49,826 - INFO - ======================================================================
+2025-12-22 23:06:49,826 - INFO - Fetching: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 23:06:50,505 - ERROR - Request error: 404 Client Error: Not Found for url: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 23:06:50,507 - ERROR - Failed to scrape TUNINDEX data
+2025-12-22 23:08:16,212 - INFO - ======================================================================
+2025-12-22 23:08:16,212 - INFO - Starting TUNINDEX Daily Data Collection
+2025-12-22 23:08:16,212 - INFO - ======================================================================
+2025-12-22 23:08:16,212 - INFO - Attempting: https://www.ilboursa.com/marches/cotation_TUNINDEX
+2025-12-22 23:08:16,852 - INFO - Attempting: https://www.bvmt.com.tn/en/indices
+2025-12-22 23:08:27,167 - INFO - Attempting: https://www.bvmt.com.tn/en/indice-principal
+2025-12-22 23:08:40,498 - WARNING - Could not extract price from websites, using default placeholder: 8000
+2025-12-22 23:08:40,499 - INFO - 
+✓ TUNINDEX Data for 2025-12-22:
+2025-12-22 23:08:40,500 - INFO -   Close: 8000
+2025-12-22 23:08:40,500 - INFO -   Source: Placeholder (Website Unavailable)
+2025-12-22 23:08:40,501 - INFO - 
+======================================================================
+2025-12-22 23:08:40,501 - INFO - MERGING WITH HISTORICAL DATA
+2025-12-22 23:08:40,501 - INFO - ======================================================================
+2025-12-22 23:08:40,501 - INFO - No existing TUNINDEX data found, starting fresh
+2025-12-22 23:08:40,536 - INFO - Total records: 1
+2025-12-22 23:08:40,538 - INFO - Date range: 2025-12-22 to 2025-12-22
+2025-12-22 23:08:40,545 - INFO - 
+✅ TUNINDEX data saved to: C:\Users\NOUIRA\Documents\junior\BI project\data\tunindex_historical.csv
+2025-12-22 23:08:40,545 - INFO - 
+======================================================================
+2025-12-22 23:08:40,545 - INFO - LATEST TUNINDEX VALUES
+2025-12-22 23:08:40,546 - INFO - ======================================================================
+2025-12-22 23:08:40,551 - INFO -       Date   Ticker  Open  High  Low  Close  Volume
+2025-12-22 TUNINDEX  8000  8000 8000   8000       0
+2025-12-22 23:08:40,552 - INFO - 
+======================================================================
+2025-12-22 23:08:40,552 - INFO - ✅ TUNINDEX DATA COLLECTION COMPLETE
+2025-12-22 23:08:40,552 - INFO - ======================================================================
+2025-12-22 23:08:40,552 - INFO - Total TUNINDEX records: 1
+2025-12-22 23:08:40,552 - INFO - Latest date: 2025-12-22
+2025-12-22 23:08:40,552 - INFO - Output file: C:\Users\NOUIRA\Documents\junior\BI project\data\tunindex_historical.csv
+2025-12-22 23:08:40,553 - INFO - 
+✅ Script completed successfully!

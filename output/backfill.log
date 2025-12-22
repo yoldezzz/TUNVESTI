@@ -1,0 +1,424 @@
+2025-12-22 23:14:40,182 - INFO - 
+======================================================================
+2025-12-22 23:14:40,183 - INFO - STARTING BACKFILL PROCESS (2023-2025)
+2025-12-22 23:14:40,184 - INFO - ======================================================================
+2025-12-22 23:14:40,184 - INFO - ======================================================================
+2025-12-22 23:14:40,185 - INFO - BACKFILL STRATEGY 1: Yahoo Finance
+2025-12-22 23:14:40,186 - INFO - ======================================================================
+2025-12-22 23:14:41,983 - INFO - ✓ yfinance installed, attempting download...
+2025-12-22 23:14:41,984 - INFO - Target period: 2023-01-01 to 2025-12-21
+2025-12-22 23:14:41,984 - INFO - Target stocks: 90
+2025-12-22 23:14:44,936 - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADWYA.TN"}}}
+2025-12-22 23:14:45,401 - ERROR - $ADWYA.TN: possibly delisted; no timezone found
+2025-12-22 23:14:45,403 - ERROR - 
+1 Failed download:
+2025-12-22 23:14:45,404 - ERROR - ['ADWYA.TN']: possibly delisted; no timezone found
+2025-12-22 23:14:47,201 - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADWYA"}}}
+2025-12-22 23:14:47,550 - ERROR - $ADWYA: possibly delisted; no timezone found
+2025-12-22 23:14:47,552 - ERROR - 
+1 Failed download:
+2025-12-22 23:14:47,553 - ERROR - ['ADWYA']: possibly delisted; no timezone found
+2025-12-22 23:14:48,226 - ERROR - $AETEC.TN: possibly delisted; no timezone found
+2025-12-22 23:14:48,236 - ERROR - 
+1 Failed download:
+2025-12-22 23:14:48,236 - ERROR - ['AETEC.TN']: possibly delisted; no timezone found
+2025-12-22 23:14:49,118 - ERROR - $AETEC: possibly delisted; no timezone found
+2025-12-22 23:14:49,120 - ERROR - 
+1 Failed download:
+2025-12-22 23:14:49,121 - ERROR - ['AETEC']: possibly delisted; no timezone found
+2025-12-22 23:14:59,292 - ERROR - $AL.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:14:59,301 - ERROR - 
+1 Failed download:
+2025-12-22 23:14:59,302 - ERROR - ['AL.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:00,562 - ERROR - $AB.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:00,565 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:00,565 - ERROR - ['AB.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:01,828 - ERROR - $AMS.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:01,830 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:01,830 - ERROR - ['AMS.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:03,010 - ERROR - $ATB.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:03,010 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:03,013 - ERROR - ['ATB.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:03,643 - ERROR - $ATB: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:03,649 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:03,649 - ERROR - ['ATB']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:04,105 - ERROR - $ATL.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:04,109 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:04,112 - ERROR - ['ATL.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:04,611 - ERROR - $ATL: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:04,618 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:04,618 - ERROR - ['ATL']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:05,439 - ERROR - $ARTES.TN: possibly delisted; no timezone found
+2025-12-22 23:15:05,439 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:05,440 - ERROR - ['ARTES.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:06,331 - ERROR - $ARTES: possibly delisted; no timezone found
+2025-12-22 23:15:06,336 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:06,337 - ERROR - ['ARTES']: possibly delisted; no timezone found
+2025-12-22 23:15:06,868 - ERROR - $ASSAD.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:06,873 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:06,873 - ERROR - ['ASSAD.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:07,671 - ERROR - $ASSAD: possibly delisted; no timezone found
+2025-12-22 23:15:07,674 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:07,674 - ERROR - ['ASSAD']: possibly delisted; no timezone found
+2025-12-22 23:15:08,472 - ERROR - $ASSMA.TN: possibly delisted; no timezone found
+2025-12-22 23:15:08,473 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:08,473 - ERROR - ['ASSMA.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:09,151 - ERROR - $ASSMA: possibly delisted; no timezone found
+2025-12-22 23:15:09,158 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:09,159 - ERROR - ['ASSMA']: possibly delisted; no timezone found
+2025-12-22 23:15:09,650 - ERROR - $AST.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:09,655 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:09,655 - ERROR - ['AST.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:10,546 - ERROR - $AST: possibly delisted; no timezone found
+2025-12-22 23:15:10,549 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:10,549 - ERROR - ['AST']: possibly delisted; no timezone found
+2025-12-22 23:15:11,227 - ERROR - $TJARI.TN: possibly delisted; no timezone found
+2025-12-22 23:15:11,235 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:11,236 - ERROR - ['TJARI.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:12,144 - ERROR - $TJARI: possibly delisted; no timezone found
+2025-12-22 23:15:12,144 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:12,145 - ERROR - ['TJARI']: possibly delisted; no timezone found
+2025-12-22 23:15:12,865 - ERROR - $TJL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:12,872 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:12,872 - ERROR - ['TJL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:13,317 - ERROR - $TJL: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:13,324 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:13,324 - ERROR - ['TJL']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:13,732 - ERROR - $BT.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:13,737 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:13,737 - ERROR - ['BT.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:14,552 - ERROR - $BT: possibly delisted; no timezone found
+2025-12-22 23:15:14,553 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:14,553 - ERROR - ['BT']: possibly delisted; no timezone found
+2025-12-22 23:15:15,034 - ERROR - $BNA.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:15,038 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:15,038 - ERROR - ['BNA.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:15,487 - ERROR - $BNA: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:15,492 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:15,493 - ERROR - ['BNA']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:16,378 - ERROR - $BL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:16,380 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:16,380 - ERROR - ['BL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:18,186 - ERROR - $BHASS.TN: possibly delisted; no timezone found
+2025-12-22 23:15:18,196 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:18,196 - ERROR - ['BHASS.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:18,821 - ERROR - $BHASS: possibly delisted; no timezone found
+2025-12-22 23:15:18,825 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:18,825 - ERROR - ['BHASS']: possibly delisted; no timezone found
+2025-12-22 23:15:19,319 - ERROR - $BH.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:19,325 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:19,326 - ERROR - ['BH.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:20,953 - ERROR - $BHL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:20,961 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:20,962 - ERROR - ['BHL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:21,388 - ERROR - $BHL: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:21,396 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:21,396 - ERROR - ['BHL']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:21,946 - ERROR - $BIAT.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:21,951 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:21,952 - ERROR - ['BIAT.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:22,607 - ERROR - $BIAT: possibly delisted; no timezone found
+2025-12-22 23:15:22,610 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:22,610 - ERROR - ['BIAT']: possibly delisted; no timezone found
+2025-12-22 23:15:23,383 - ERROR - $BNASS.TN: possibly delisted; no timezone found
+2025-12-22 23:15:23,389 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:23,389 - ERROR - ['BNASS.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:24,036 - ERROR - $BNASS: possibly delisted; no timezone found
+2025-12-22 23:15:24,039 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:24,040 - ERROR - ['BNASS']: possibly delisted; no timezone found
+2025-12-22 23:15:24,914 - ERROR - $BTE.TN: possibly delisted; no timezone found
+2025-12-22 23:15:24,923 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:24,923 - ERROR - ['BTE.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:26,209 - ERROR - $CC.TN: possibly delisted; no timezone found
+2025-12-22 23:15:26,216 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:26,216 - ERROR - ['CC.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:27,563 - ERROR - $CELL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:27,564 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:27,564 - ERROR - ['CELL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:28,176 - ERROR - $CELL: possibly delisted; no timezone found
+2025-12-22 23:15:28,177 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:28,178 - ERROR - ['CELL']: possibly delisted; no timezone found
+2025-12-22 23:15:28,988 - ERROR - $CREAL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:28,994 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:28,994 - ERROR - ['CREAL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:29,652 - ERROR - $CREAL: possibly delisted; no timezone found
+2025-12-22 23:15:29,653 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:29,653 - ERROR - ['CREAL']: possibly delisted; no timezone found
+2025-12-22 23:15:30,075 - ERROR - $CIL.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:30,076 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:30,077 - ERROR - ['CIL.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:38,335 - ERROR - $SCB.TN: possibly delisted; no timezone found
+2025-12-22 23:15:38,336 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:38,336 - ERROR - ['SCB.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:38,781 - ERROR - $SCB: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:38,790 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:38,790 - ERROR - ['SCB']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:39,587 - ERROR - $CITY.TN: possibly delisted; no timezone found
+2025-12-22 23:15:39,591 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:39,591 - ERROR - ['CITY.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:40,195 - ERROR - $CITY: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:40,203 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:40,204 - ERROR - ['CITY']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:40,948 - ERROR - $DH.TN: possibly delisted; no timezone found
+2025-12-22 23:15:40,957 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:40,957 - ERROR - ['DH.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:42,085 - ERROR - $ELBEN.TN: possibly delisted; no timezone found
+2025-12-22 23:15:42,094 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:42,095 - ERROR - ['ELBEN.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:42,907 - ERROR - $ELBEN: possibly delisted; no timezone found
+2025-12-22 23:15:42,913 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:42,914 - ERROR - ['ELBEN']: possibly delisted; no timezone found
+2025-12-22 23:15:43,364 - ERROR - $LSTR.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:43,370 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:43,370 - ERROR - ['LSTR.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:44,671 - ERROR - $NAKL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:44,679 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:44,679 - ERROR - ['NAKL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:45,691 - ERROR - $NAKL: possibly delisted; no timezone found
+2025-12-22 23:15:45,697 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:45,697 - ERROR - ['NAKL']: possibly delisted; no timezone found
+2025-12-22 23:15:46,511 - ERROR - $SOKNA.TN: possibly delisted; no timezone found
+2025-12-22 23:15:46,518 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:46,518 - ERROR - ['SOKNA.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:47,347 - ERROR - $SOKNA: possibly delisted; no timezone found
+2025-12-22 23:15:47,349 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:47,350 - ERROR - ['SOKNA']: possibly delisted; no timezone found
+2025-12-22 23:15:48,153 - ERROR - $ECYCL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:48,161 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:48,162 - ERROR - ['ECYCL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:49,148 - ERROR - $ECYCL: possibly delisted; no timezone found
+2025-12-22 23:15:49,148 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:49,149 - ERROR - ['ECYCL']: possibly delisted; no timezone found
+2025-12-22 23:15:49,568 - ERROR - $GIF.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:49,569 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:49,569 - ERROR - ['GIF.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:50,809 - ERROR - $HL.TN: possibly delisted; no timezone found
+2025-12-22 23:15:50,819 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:50,819 - ERROR - ['HL.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:52,348 - ERROR - $XABYT.TN: possibly delisted; no timezone found
+2025-12-22 23:15:52,357 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:52,358 - ERROR - ['XABYT.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:53,034 - ERROR - $XABYT: possibly delisted; no timezone found
+2025-12-22 23:15:53,043 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:53,044 - ERROR - ['XABYT']: possibly delisted; no timezone found
+2025-12-22 23:15:53,573 - ERROR - $ICF.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:53,579 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:53,579 - ERROR - ['ICF.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:15:55,188 - ERROR - $LNDOR.TN: possibly delisted; no timezone found
+2025-12-22 23:15:55,197 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:55,198 - ERROR - ['LNDOR.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:55,974 - ERROR - $LNDOR: possibly delisted; no timezone found
+2025-12-22 23:15:55,976 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:55,976 - ERROR - ['LNDOR']: possibly delisted; no timezone found
+2025-12-22 23:15:56,813 - ERROR - $MAG.TN: possibly delisted; no timezone found
+2025-12-22 23:15:56,819 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:56,819 - ERROR - ['MAG.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:57,534 - ERROR - $MAG: possibly delisted; no timezone found
+2025-12-22 23:15:57,536 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:57,536 - ERROR - ['MAG']: possibly delisted; no timezone found
+2025-12-22 23:15:58,534 - ERROR - $AMV.TN: possibly delisted; no timezone found
+2025-12-22 23:15:58,535 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:58,535 - ERROR - ['AMV.TN']: possibly delisted; no timezone found
+2025-12-22 23:15:59,207 - ERROR - $AMV: possibly delisted; no timezone found
+2025-12-22 23:15:59,211 - ERROR - 
+1 Failed download:
+2025-12-22 23:15:59,211 - ERROR - ['AMV']: possibly delisted; no timezone found
+2025-12-22 23:16:00,196 - ERROR - $SAM.TN: possibly delisted; no timezone found
+2025-12-22 23:16:00,202 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:00,202 - ERROR - ['SAM.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:01,464 - ERROR - $MIP.TN: possibly delisted; no timezone found
+2025-12-22 23:16:01,466 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:01,467 - ERROR - ['MIP.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:02,030 - ERROR - $MIP: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:02,039 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:02,039 - ERROR - ['MIP']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:02,545 - ERROR - $MNP.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:02,547 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:02,547 - ERROR - ['MNP.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:03,472 - ERROR - $MNP: possibly delisted; no timezone found
+2025-12-22 23:16:03,476 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:03,477 - ERROR - ['MNP']: possibly delisted; no timezone found
+2025-12-22 23:16:04,174 - ERROR - $MPBS.TN: possibly delisted; no timezone found
+2025-12-22 23:16:04,180 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:04,180 - ERROR - ['MPBS.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:05,052 - ERROR - $MPBS: possibly delisted; no timezone found
+2025-12-22 23:16:05,053 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:05,053 - ERROR - ['MPBS']: possibly delisted; no timezone found
+2025-12-22 23:16:05,652 - ERROR - $NBL.TN: possibly delisted; no timezone found
+2025-12-22 23:16:05,653 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:05,654 - ERROR - ['NBL.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:06,578 - ERROR - $NBL: possibly delisted; no timezone found
+2025-12-22 23:16:06,587 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:06,587 - ERROR - ['NBL']: possibly delisted; no timezone found
+2025-12-22 23:16:07,259 - ERROR - $PLAST.TN: possibly delisted; no timezone found
+2025-12-22 23:16:07,264 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:07,265 - ERROR - ['PLAST.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:08,021 - ERROR - $PLAST: possibly delisted; no timezone found
+2025-12-22 23:16:08,025 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:08,025 - ERROR - ['PLAST']: possibly delisted; no timezone found
+2025-12-22 23:16:08,640 - ERROR - $OTH.TN: possibly delisted; no timezone found
+2025-12-22 23:16:08,649 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:08,649 - ERROR - ['OTH.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:09,779 - ERROR - $PLTU.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:09,783 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:09,784 - ERROR - ['PLTU.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:11,120 - ERROR - $PGH.TN: possibly delisted; no timezone found
+2025-12-22 23:16:11,125 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:11,126 - ERROR - ['PGH.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:11,595 - ERROR - $PGH: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:11,599 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:11,599 - ERROR - ['PGH']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:12,375 - ERROR - $SAH.TN: possibly delisted; no timezone found
+2025-12-22 23:16:12,379 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:12,379 - ERROR - ['SAH.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:13,943 - ERROR - $SMD.TN: possibly delisted; no timezone found
+2025-12-22 23:16:13,944 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:13,945 - ERROR - ['SMD.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:14,425 - ERROR - $SMD: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:14,430 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:14,430 - ERROR - ['SMD']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:15,142 - ERROR - $SERVI.TN: possibly delisted; no timezone found
+2025-12-22 23:16:15,147 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:15,147 - ERROR - ['SERVI.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:15,983 - ERROR - $SERVI: possibly delisted; no timezone found
+2025-12-22 23:16:15,988 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:15,989 - ERROR - ['SERVI']: possibly delisted; no timezone found
+2025-12-22 23:16:16,442 - ERROR - $SFBT.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:16,443 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:16,443 - ERROR - ['SFBT.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:17,127 - ERROR - $SFBT: possibly delisted; no timezone found
+2025-12-22 23:16:17,136 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:17,136 - ERROR - ['SFBT']: possibly delisted; no timezone found
+2025-12-22 23:16:17,975 - ERROR - $SIAME.TN: possibly delisted; no timezone found
+2025-12-22 23:16:17,975 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:17,976 - ERROR - ['SIAME.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:18,686 - ERROR - $SIAME: possibly delisted; no timezone found
+2025-12-22 23:16:18,691 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:18,691 - ERROR - ['SIAME']: possibly delisted; no timezone found
+2025-12-22 23:16:19,611 - ERROR - $SIMPA.TN: possibly delisted; no timezone found
+2025-12-22 23:16:19,612 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:19,612 - ERROR - ['SIMPA.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:20,472 - ERROR - $SIMPA: possibly delisted; no timezone found
+2025-12-22 23:16:20,481 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:20,481 - ERROR - ['SIMPA']: possibly delisted; no timezone found
+2025-12-22 23:16:20,923 - ERROR - $SIPHA.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:20,923 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:20,924 - ERROR - ['SIPHA.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:22,314 - ERROR - $SIPHA: possibly delisted; no timezone found
+2025-12-22 23:16:22,323 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:22,324 - ERROR - ['SIPHA']: possibly delisted; no timezone found
+2025-12-22 23:16:23,051 - ERROR - $SITS.TN: possibly delisted; no timezone found
+2025-12-22 23:16:23,060 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:23,060 - ERROR - ['SITS.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:24,589 - ERROR - $SMART.TN: possibly delisted; no timezone found
+2025-12-22 23:16:24,590 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:24,590 - ERROR - ['SMART.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:25,353 - ERROR - $SMART: possibly delisted; no timezone found
+2025-12-22 23:16:25,358 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:25,359 - ERROR - ['SMART']: possibly delisted; no timezone found
+2025-12-22 23:16:26,437 - ERROR - $ALKIM.TN: possibly delisted; no timezone found
+2025-12-22 23:16:26,441 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:26,441 - ERROR - ['ALKIM.TN']: possibly delisted; no timezone found
+2025-12-22 23:16:27,038 - ERROR - $ALKIM: possibly delisted; no timezone found
+2025-12-22 23:16:27,043 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:27,043 - ERROR - ['ALKIM']: possibly delisted; no timezone found
+2025-12-22 23:16:27,632 - ERROR - $SOMOC.TN: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
+2025-12-22 23:16:27,635 - ERROR - 
+1 Failed download:
+2025-12-22 23:16:27,635 - ERROR - ['SOMOC.TN']: possibly delisted; no price data found  (1d 2023-01-01 -> 2025-12-21)
