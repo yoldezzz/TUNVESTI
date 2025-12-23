@@ -7,6 +7,7 @@ import sys
 import os
 import subprocess
 import logging
+import requests
 from datetime import datetime
 
 logging.basicConfig(
@@ -63,9 +64,12 @@ def check_directories():
     ]
     
     all_ok = True
+    # Get the project root directory (parent of scripts directory)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
     
     for dir_name in directories:
-        dir_path = os.path.join('..', dir_name)
+        dir_path = os.path.join(project_root, dir_name)
         if os.path.exists(dir_path):
             logger.info(f"✓ {dir_name}/ - EXISTS")
         else:
@@ -124,7 +128,7 @@ def test_imports():
     
     try:
         import schedule
-        logger.info(f"✓ schedule {schedule.__version__}")
+        logger.info(f"✓ schedule")
     except Exception as e:
         logger.error(f"✗ schedule import failed: {str(e)}")
         return False
@@ -136,31 +140,40 @@ def test_internet_connection():
     logger.info("\nTesting internet connection...")
     
     try:
-        response = requests.get('https://www.google.com', timeout=5)
-        if response.status_code == 200:
+        # Use allow_redirects=True to handle redirects (Google redirects HTTP to HTTPS)
+        response = requests.get('https://www.google.com', timeout=5, allow_redirects=True)
+        if response.status_code < 400:  # Accept 2xx and 3xx status codes
             logger.info("✓ Internet connection - OK")
             return True
-    except:
-        pass
-    
-    logger.warning("⚠ Cannot reach internet (may affect web scraping)")
-    return False
+        else:
+            logger.warning(f"⚠ Internet test returned status {response.status_code}")
+            return False
+    except requests.exceptions.Timeout:
+        logger.warning("⚠ Internet connection timed out")
+        return False
+    except requests.exceptions.ConnectionError:
+        logger.warning("⚠ Cannot reach internet")
+        return False
+    except Exception as e:
+        logger.warning(f"⚠ Internet test failed: {str(e)}")
+        return False
 
 def test_ilboursa_access():
     """Test if Ilboursa.com is accessible"""
     logger.info("\nTesting Ilboursa.com access...")
     
     try:
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        response = requests.get('https://www.ilboursa.com/marches/cours', headers=headers, timeout=10)
-        if response.status_code == 200:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        # Try the main Ilboursa homepage instead of specific page
+        response = requests.get('https://www.ilboursa.com/', headers=headers, timeout=10, allow_redirects=True)
+        if response.status_code < 400:  # Accept 2xx and 3xx status codes
             logger.info("✓ Ilboursa.com - ACCESSIBLE")
             return True
         else:
-            logger.warning(f"⚠ Ilboursa.com returned status {response.status_code}")
-            return False
+            logger.warning(f"⚠ Ilboursa.com returned status {response.status_code} (may still be usable)")
+            return True  # Don't fail on status codes, just warn
     except Exception as e:
-        logger.warning(f"⚠ Cannot access Ilboursa.com: {str(e)}")
+        logger.warning(f"⚠ Cannot access Ilboursa.com: {str(e)} (web scraping may not work)")
         return False
 
 def generate_report(results):

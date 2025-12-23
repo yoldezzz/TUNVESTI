@@ -1,17 +1,17 @@
 # TUNVESTI DATA PIPELINE - COMPLETE DOCUMENTATION
 **Step-by-Step Explanation of Everything We Did**
 
-================================================================================
+
 ## TUNVESTI DATA PIPELINE OVERVIEW
-================================================================================
+
 
 **PROJECT:** TUNVESTI BI Dashboard - Tunisian Stock Market Analysis  
 **GOAL:** Collect, process, and visualize 15+ years of Tunisia stock market data  
 **DATA SOURCES:** Kaggle (Historical) + Ilboursa.com (Daily Updates)
 
-================================================================================
+
 ## STEP 1: KAGGLE DATA
-================================================================================
+
 
 **WHAT:** Downloaded historical stock prices for Tunisian companies (2010-2022)  
 **SOURCE:** https://www.kaggle.com/datasets/tunisian-stock-market
@@ -44,9 +44,9 @@ Example (AB.csv - Amen Bank):
 - Date range: 2010-01-04 to 2022-12-30 (12.9 years)
 - Data quality: Daily Open, High, Low, Close prices + Trading Volume
 
-================================================================================
+
 ## STEP 2: SCRIPT 01 - LOAD KAGGLE DATA
-================================================================================
+
 
 **SCRIPT:** 01_load_kaggle_data.py
 
@@ -91,9 +91,9 @@ save to CSV
 - ✓ 187,987 rows merged
 - ✓ Ready for Step 3 (merge + calculate metrics)
 
-================================================================================
+
 ## STEP 3: SCRIPT 02 - SCRAPE ILBOURSA DAILY
-================================================================================
+
 
 **SCRIPT:** 02_scrape_ilboursa_daily.py
 
@@ -157,9 +157,9 @@ Updated: Daily when script runs
 - Website parsing may fail for certain stocks
 - Normal: 70-85 stocks per day is good success rate
 
-================================================================================
+
 ## STEP 4: SCRIPT 03 - MERGE & CALCULATE METRICS
-================================================================================
+
 
 **SCRIPT:** 03_merge_data.py
 
@@ -204,9 +204,9 @@ Output:
 Final: 185,892 rows
 ```
 
-================================================================================
+
 ## CALCULATED VARIABLES EXPLAINED
-================================================================================
+
 
 ### VARIABLE 1: RETURN (Daily Percentage Return)
 
@@ -282,9 +282,9 @@ AB      2010-02-04    Volatility_30d = 0.142 (14.2% volatility)
 AB      2022-12-30    Volatility_30d = 0.189 (18.9% volatility)
 ```
 
-================================================================================
+
 ## FINAL DATASET STRUCTURE
-================================================================================
+
 
 **FILE:** output/final_tunvesti_dataset.csv
 
@@ -346,9 +346,9 @@ AB      2022-12-30    Volatility_30d = 0.189 (18.9% volatility)
 - Source: CALCULATED from Return column
 - First 30 values per ticker: NaN (need 30 days history)
 
-================================================================================
+
 ## DATA QUALITY SUMMARY
-================================================================================
+
 
 ### HISTORICAL DATA (2010-2022):
 - ✓ 187,987 rows loaded from 88 CSV files
@@ -366,9 +366,9 @@ AB      2022-12-30    Volatility_30d = 0.189 (18.9% volatility)
 - NaN in Volatility_30d = First 30 days (need 30-day window)
 - These are EXPECTED and normal
 
-================================================================================
+
 ## USAGE & APPLICATIONS
-================================================================================
+
 
 ### WHAT CAN YOU DO WITH THIS DATA?
 
@@ -396,9 +396,9 @@ AB      2022-12-30    Volatility_30d = 0.189 (18.9% volatility)
 - ✓ Risk metrics summary
 - ✓ Market analysis
 
-================================================================================
+
 ## NEXT STEPS
-================================================================================
+
 
 ### 1. ✅ LOAD IN POWER BI / TABLEAU
 File: output/final_tunvesti_dataset.csv
@@ -422,9 +422,9 @@ Script: 04_scheduler.py
 - Recalculates metrics
 - Updates dashboard automatically
 
-================================================================================
+
 ## FILE LOCATIONS
-================================================================================
+
 
 ### INPUT FILES:
 - ✓ data/kaggle_source/*.csv        (88 Kaggle stock files)
@@ -439,12 +439,3 @@ Script: 04_scheduler.py
 ### LOGS:
 - ✓ output/web_scraping.log         (Scraper logs)
 
-================================================================================
-## COMPLETE! YOU'RE READY!
-================================================================================
-
-Your dataset is 100% ready to:
-1. Import into Power BI / Tableau
-2. Create professional dashboards
-3. Analyze Tunisian stock market
-4. Make investment decisions
