@@ -11,6 +11,7 @@ from datetime import datetime
 import logging
 import os
 import time
+import re
 
 # Setup absolute paths
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -79,7 +80,7 @@ def scrape_ilboursa_daily():
             
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # Look for price and volume data in the page
+            # Try multiple selectors to find the price
             price_value = None
             volume_value = 0
             
@@ -90,7 +91,6 @@ def scrape_ilboursa_daily():
                 'span[class*="prix"]',
                 'span[class*="price"]',
                 'div[class*="cours"] span',
-                'td:contains("Cours") + td',
             ]
             
             for selector in price_selectors:
@@ -114,7 +114,6 @@ def scrape_ilboursa_daily():
             if not price_value:
                 # Look for any number that looks like a price (3-4 digits with decimals)
                 all_text = soup.get_text()
-                import re
                 prices = re.findall(r'(\d+[.,]\d{1,2}(?:\d+)?)', all_text)
                 if prices:
                     try:
@@ -124,7 +123,6 @@ def scrape_ilboursa_daily():
             
             # Try to extract volume data
             # Volume might be in various formats: "1.5B", "1500M", "1,500", etc.
-            import re
             all_text = soup.get_text()
             
             # Look for volume patterns (e.g., "1.50B", "482.51M", "1500")
@@ -194,7 +192,6 @@ def scrape_tunindex():
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Look for price value
-        import re
         all_text = soup.get_text()
         prices = re.findall(r'(\d+[.,]\d{1,2}(?:\d+)?)', all_text)
         
