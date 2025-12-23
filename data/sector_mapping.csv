@@ -1,91 +1,65 @@
-Ticker,Sector,Source
-ADWYA,Pharmaceutical,Verified Mapping
-AETEC,Retail,Verified Mapping
-AL,Telecom,Verified Mapping
-AB,Banking,Verified Mapping
-AMS,Construction,Verified Mapping
-ATB,Banking,Verified Mapping
-ATL,Telecom,Verified Mapping
-ARTES,Technology,Verified Mapping
-ASSAD,Manufacturing,Verified Mapping
-ASSMA,Insurance,Verified Mapping
-AST,Manufacturing,Verified Mapping
-TJARI,Banking,Verified Mapping
-TJL,Unclassified,Verified Mapping
-BT,Banking,Verified Mapping
-BNA,Banking,Verified Mapping
-BL,Finance,Verified Mapping
-BHASS,Real Estate,Verified Mapping
-BH,Banking,Verified Mapping
-BHL,Real Estate,Verified Mapping
-BIAT,Banking,Verified Mapping
-BNASS,Banking,Verified Mapping
-BTE,Banking,Verified Mapping
-CC,Holding,Verified Mapping
-CELL,Telecom,Verified Mapping
-CREAL,Real Estate,Verified Mapping
-CIL,Construction,Verified Mapping
-SCB,Banking,Verified Mapping
-CITY,Retail,Verified Mapping
-DH,Retail,Verified Mapping
-ELBEN,Manufacturing,Verified Mapping
-LSTR,Transport,Verified Mapping
-NAKL,Retail,Verified Mapping
-SOKNA,Construction,Verified Mapping
-ECYCL,Recycling,Verified Mapping
-GIF,Distribution,Verified Mapping
-HL,Tourism,Verified Mapping
-XABYT,Finance,Verified Mapping
-ICF,Finance,Verified Mapping
-LNDOR,Finance,Verified Mapping
-MAG,Retail,Verified Mapping
-AMV,Insurance,Verified Mapping
-SAM,Media,Verified Mapping
-MIP,Manufacturing,Verified Mapping
-MNP,Manufacturing,Verified Mapping
-MPBS,Manufacturing,Verified Mapping
-NBL,Distribution,Verified Mapping
-PLAST,Chemicals,Verified Mapping
-OTH,Diversified,Verified Mapping
-PLTU,Retail,Verified Mapping
-PGH,Pharmaceutical,Verified Mapping
-SAH,Transport,Verified Mapping
-SMD,Retail,Verified Mapping
-SERVI,Real Estate,Verified Mapping
-SFBT,Manufacturing,Verified Mapping
-SIAME,Manufacturing,Verified Mapping
-SIMPA,Manufacturing,Verified Mapping
-SIPHA,Manufacturing,Verified Mapping
-SITS,Diversified,Verified Mapping
-SMART,Finance,Verified Mapping
-ALKIM,Pharmaceutical,Verified Mapping
-SOMOC,Retail,Verified Mapping
-SOPAT,Distribution,Verified Mapping
-SOTEM,Manufacturing,Verified Mapping
-SOTET,Food & Beverage,Verified Mapping
-STPAP,Paper & Packaging,Verified Mapping
-STPIL,Manufacturing,Verified Mapping
-MGR,Construction,Verified Mapping
-SOTUV,Utilities,Verified Mapping
-SPDIT,Insurance,Verified Mapping
-STA,Transport,Verified Mapping
-STAR,Insurance,Verified Mapping
-STB,Retail,Verified Mapping
-STEQ,Utilities,Verified Mapping
-STIP,Infrastructure,Verified Mapping
-SPHAX,Pharmaceutical,Verified Mapping
-TGH,Hospitality,Verified Mapping
-TLNET,Telecom,Verified Mapping
-TPR,Transport,Verified Mapping
-PX1,Indices,Verified Mapping
-TINV,Investment,Verified Mapping
-TRE,Real Estate,Verified Mapping
-TAIR,Transport,Verified Mapping
-TBIDX,Indices,Verified Mapping
-TLS,Telecom,Verified Mapping
-TVAL,Tourism,Verified Mapping
-UADH,Retail,Verified Mapping
-UBCI,Banking,Verified Mapping
-UIB,Banking,Verified Mapping
-UMED,Insurance,Verified Mapping
-WIFAK,Finance,Verified Mapping
+Ticker,Company Name,Sector
+AB,Attijari Bank,Banking
+ADH,Artisanat de Distribution Horlogère,Consumer Goods
+AETECH,Aetech,Technology
+AIR,Air Liquide Tunisie,Industrials
+AL,Air Liquide Tunisie,Industrials (duplicate if same)
+ALKIMIA,Alkimia,Basic Materials
+AMEN, Amen Bank,Banking
+AMI,Assurances Maghrebia,Insurance
+AMS,Amen Leasing,Financial Services
+ARTES,Automobile Réseau Tunisien et Services,Consumer Services
+ASSAD,Assurances Salim,Insurance
+ASTREE,Assurances Astree,Insurance
+ATB,Arab Tunisian Bank,Banking
+ATL,Atelier du Meuble Intérieurs,Consumer Goods
+BH, Banque de l'Habitat,Banking
+BIAT,Banque Internationale Arabe de Tunisie,Banking
+BNA,Banque Nationale Agricole,Banking
+BHASS,BH Assurance,Insurance
+BT,Banque de Tunisie,Banking
+CELLCOM,Cellcom,Technology
+CIL,Compagnie Internationale de Leasing,Financial Services
+CITY,City Cars,Consumer Services
+DELICE,Delice Holding,Consumer Goods
+ECYCL,Euro-Cycles,Consumer Goods
+ELBENE,Bénéficiaire El Bene,Industrials
+ESSOUKNA,Société Essoukna,Real Estate
+GIF,GIF Filter,Industrials
+HEXABYTE,Hexabyte,Technology
+HL,Hannibal Lease,Financial Services
+ICF,Industries Chimiques du Fluor,Basic Materials
+LANDOR,Land'Or,Consumer Goods
+MAG,Monoprix,Consumer Services
+MGR,Magasin Général,Consumer Services
+MNP,Manufacture de Panneaux,Industrials
+MPBS,Modern Leasing,Financial Services
+MTE,Magasin Tunisien d'Equipement,Consumer Goods
+NBL,New Body Line,Consumer Goods
+OFFPL,Office Plast,Industrials
+ONE,One Tech Holding,Technology
+PGH,Poulina Group Holding,Consumer Goods
+PLTU,Placements de Tunisie,Financial Services
+SAH,Lilac Assurances,Insurance
+SAM,Société Africaine de Pneumatiques,Industrials
+SFBT,Société de Fabrication des Boissons de Tunisie,Consumer Goods
+SIAME,Société Industrielle d'Appareils Ménagers,Consumer Goods
+SIMPAR,Société Immobilière et de Participation,Real Estate
+SIPAT,Société Immobilière Tuniso-Saoudienne,Real Estate
+SITS,Société Immobilière Tuniso-Saoudienne,Real Estate (same as above)
+SMD,Société Moderne de Distribution,Consumer Services
+SMT,Société Tunisienne de Menuiserie,Industrials
+SOKNA,Société Tunisienne de Verrerie,Industrials
+SOMOCER,Société Moderne Céramique,Industrials
+SPDIT,Société de Promotion de Développement Industriel,Industrials
+STAR,Assurances Star,Insurance
+STCCR,Société Tunisienne de Céramique,Industrials
+STPAP,Société Tuniso Papier,Basic Materials
+STPIL,Société Tunisienne de Pneumatiques,Industrials
+TAIR,Tunisie Air,Consumer Services
+TLILI,Tunisie Lait,Consumer Goods
+TLS,Tunisie Leasing & Factoring,Financial Services
+TPR,Tunisie Profiles Aluminium,Industrials
+UBCI,Union Bancaire pour le Commerce et l'Industrie,Banking
+UIB,Union Internationale de Banques,Banking
+WIFAK,Wifak Bank,Banking
