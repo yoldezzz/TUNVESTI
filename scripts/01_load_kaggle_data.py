@@ -9,12 +9,18 @@ from glob import glob
 import logging
 from datetime import datetime
 
+# Get absolute paths for logging
+script_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir = os.path.dirname(script_dir)
+output_dir = os.path.join(base_dir, 'output')
+os.makedirs(output_dir, exist_ok=True)
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('../output/data_loading.log'),
+        logging.FileHandler(os.path.join(output_dir, 'data_loading.log')),
         logging.StreamHandler()
     ]
 )
@@ -114,9 +120,6 @@ def main():
         logger.info("=== TUNVESTI Step 1: Load Kaggle Data ===\n")
         
         # Get absolute paths
-        import os
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        base_dir = os.path.dirname(script_dir)  # Parent of scripts folder
         kaggle_folder = os.path.join(base_dir, 'data', 'kaggle_source')
         output_path = os.path.join(base_dir, 'data', 'historical_stocks_2010_2022.csv')
         
