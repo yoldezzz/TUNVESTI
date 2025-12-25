@@ -1,92 +1,92 @@
 ticker,sector,company
 AB,Banking,Attijari Bank
-ADWYA,,
-AETEC,,
-AL,Industrials (duplicate if same),Air Liquide Tunisie
-ALKIM,,
+ADWYA,Technology,ADWYA
+AETEC,Technology,AETEC
+AL,Industrials,Air Liquide Tunisie
+ALKIM,Basic Materials,Alkimia
 AMI,Insurance,Assurances Maghrebia
 AMS,Financial Services,Amen Leasing
-AMV,,
+AMV,Consumer Goods,AMV
 ARTES,Consumer Services,Automobile Réseau Tunisien et Services
 ASSAD,Insurance,Assurances Salim
-ASSMA,,
-AST,,
+ASSMA,Insurance,Assurances Salma
+AST,Insurance,Astree
 ATB,Banking,Arab Tunisian Bank
 ATL,Consumer Goods,Atelier du Meuble Intérieurs
-BH,Banking, Banque de l'Habitat
+BH,Banking,Banque de l'Habitat
 BHASS,Insurance,BH Assurance
-BHL,,
+BHL,Financial Services,BHL
 BIAT,Banking,Banque Internationale Arabe de Tunisie
-BL,,
+BL,Financial Services,BL
 BNA,Banking,Banque Nationale Agricole
-BNASS,,
+BNASS,Insurance,BNA Assurance
 BT,Banking,Banque de Tunisie
-BTE,,
-CC,,
-CELL,,
+BTE,Financial Services,BTE
+CC,Consumer Services,CC
+CELL,Technology,Cellcom
 CIL,Financial Services,Compagnie Internationale de Leasing
 CITY,Consumer Services,City Cars
-CREAL,,
-DH,,
+CREAL,Real Estate,CREAL
+DH,Consumer Services,DH
 ECYCL,Consumer Goods,Euro-Cycles
-ELBEN,,
+ELBEN,Industrials,Bénéficiaire El Bene
 GIF,Industrials,GIF Filter
 HL,Financial Services,Hannibal Lease
 ICF,Basic Materials,Industries Chimiques du Fluor
-LNDOR,,
-LSTR,,
+LNDOR,Consumer Goods,Land'Or
+LSTR,Consumer Services,Lestre
 MAG,Consumer Services,Monoprix
 MGR,Consumer Services,Magasin Général
-MIP,,
+MIP,Real Estate,MIP
 MNP,Industrials,Manufacture de Panneaux
 MPBS,Financial Services,Modern Leasing
-NAKL,,
+NAKL,Consumer Services,Nakl
 NBL,Consumer Goods,New Body Line
-OTH,,
+OTH,Industrials,OTH
 PGH,Consumer Goods,Poulina Group Holding
-PLAST,,
+PLAST,Industrials,Plastique
 PLTU,Financial Services,Placements de Tunisie
 PX1,,
 SAH,Insurance,Lilac Assurances
 SAM,Industrials,Société Africaine de Pneumatiques
-SCB,,
-SERVI,,
+SCB,Utilities,Société Tunisienne du Gaz et de l'Électricité
+SERVI,Consumer Services,Services
 SFBT,Consumer Goods,Société de Fabrication des Boissons de Tunisie
 SIAME,Consumer Goods,Société Industrielle d'Appareils Ménagers
-SIMPA,,
-SIPHA,,
-SITS,Real Estate (same as above),Société Immobilière Tuniso-Saoudienne
-SMART,,
+SIMPA,Real Estate,Société Immobilière et de Participation
+SIPHA,Real Estate,Société Immobilière Tuniso-Saoudienne
+SITS,Real Estate,Société Immobilière Tuniso-Saoudienne (Services)
+SMART,Technology,Smart
 SMD,Consumer Services,Société Moderne de Distribution
 SOKNA,Industrials,Société Tunisienne de Verrerie
-SOMOC,,
-SOPAT,,
-SOTEM,,
-SOTET,,
-SOTUV,,
+SOMOC,Industrials,Société Moderne Céramique
+SOPAT,Basic Materials,Société de Papier Tunisienne
+SOTEM,Industrials,Société Tunisienne d'Énergie et de Métallurgie
+SOTET,Utilities,Société Tunisienne d'Énergie
+SOTUV,Industrials,Société Tunisienne d'Usinage et de Vente
 SPDIT,Industrials,Société de Promotion de Développement Industriel
-SPHAX,,
-STA,,
+SPHAX,Consumer Services,Société Phénicia
+STA,Consumer Services,STA
 STAR,Insurance,Assurances Star
-STB,,
-STEQ,,
-STIP,,
+STB,Consumer Goods,Société Tunisienne de Broderie
+STEQ,Consumer Goods,Société Tunisienne d'Equipement
+STIP,Consumer Services,Société Tunisienne Itinéraire Postal
 STPAP,Basic Materials,Société Tuniso Papier
 STPIL,Industrials,Société Tunisienne de Pneumatiques
 TAIR,Consumer Services,Tunisie Air
 TBIDX,,
-TGH,,
-TINV,,
-TJARI,,
-TJL,,
-TLNET,,
+TGH,Consumer Services,Tyghe
+TINV,Financial Services,Tunisie Investissement
+TJARI,Consumer Services,Tunisie Jari
+TJL,Financial Services,Tunisie Leasing
+TLNET,Technology,Tunisie Net
 TLS,Financial Services,Tunisie Leasing & Factoring
 TPR,Industrials,Tunisie Profiles Aluminium
-TRE,,
-TVAL,,
-UADH,,
+TRE,Real Estate,Tunisie Real Estate
+TVAL,Financial Services,Tunisie Valeur
+UADH,Insurance,Union Assurance Distribution Holding
 UBCI,Banking,Union Bancaire pour le Commerce et l'Industrie
 UIB,Banking,Union Internationale de Banques
-UMED,,
+UMED,Financial Services,Union Méditerranéenne
 WIFAK,Banking,Wifak Bank
-XABYT,,
+XABYT,Technology,XABYT
