@@ -1,92 +1,91 @@
 ticker,sector,company
-AB,Banking,Attijari Bank
-ADWYA,Technology,ADWYA
+AB,Financials,Amen Bank
+ADWYA,,
 AETEC,Technology,AETEC
-AL,Industrials,Air Liquide Tunisie
-ALKIM,Basic Materials,Alkimia
-AMI,Insurance,Assurances Maghrebia
-AMS,Financial Services,Amen Leasing
-AMV,Consumer Goods,AMV
-ARTES,Consumer Services,Automobile Réseau Tunisien et Services
-ASSAD,Insurance,Assurances Salim
-ASSMA,Insurance,Assurances Salma
-AST,Insurance,Astree
-ATB,Banking,Arab Tunisian Bank
+AL,Basic Materials,Air Liquide Tunisie
+ALKIM,Basic Materials,Societe Chimique Alkimia
+AMI,Financials,Assurances Maghrebia
+AMS,Financials,Amen Leasing
+AMV,Financials,Assurances Maghrebia Vie
+ARTES,Consumer Services,ARTES Renault
+ASSAD,Industrials,L'Accumulateur Tunisien
+ASSMA,Financials,Assurances Maghrebia
+AST,Financials,ASTREE
+ATB,Financials,Arab Tunisian Bank
 ATL,Consumer Goods,Atelier du Meuble Intérieurs
-BH,Banking,Banque de l'Habitat
-BHASS,Insurance,BH Assurance
-BHL,Financial Services,BHL
-BIAT,Banking,Banque Internationale Arabe de Tunisie
-BL,Financial Services,BL
-BNA,Banking,Banque Nationale Agricole
-BNASS,Insurance,BNA Assurance
-BT,Banking,Banque de Tunisie
-BTE,Financial Services,BTE
-CC,Consumer Services,CC
+BH,Financials,BH Bank
+BHASS,Financials,BH Assurance
+BHL,Financials,BH Leasing
+BIAT,Financials,Banque Internationale Arabe de Tunisie
+BL,Financials,Best Lease
+BNA,Financials,Banque Nationale Agricole
+BNASS,Financials,BNA Assurances
+BT,Financials,Banque de Tunisie
+BTE,Financials,Banque de Tunisie et des Emirats
+CC,Industrials,Carthage Cement
 CELL,Technology,Cellcom
-CIL,Financial Services,Compagnie Internationale de Leasing
+CIL,Financials,Compagnie Internationale de Leasing
 CITY,Consumer Services,City Cars
 CREAL,Real Estate,CREAL
-DH,Consumer Services,DH
-ECYCL,Consumer Goods,Euro-Cycles
+DH,Consumer Goods,Delice Holding
+ECYCL,Consumer Goods,Euro Cycles
 ELBEN,Industrials,Bénéficiaire El Bene
-GIF,Industrials,GIF Filter
-HL,Financial Services,Hannibal Lease
-ICF,Basic Materials,Industries Chimiques du Fluor
+GIF,Consumer Goods,Gif Filter
+HL,Financials,Hannibal Lease
+ICF,Basic Materials,Industries Chimiques Du Fluor
 LNDOR,Consumer Goods,Land'Or
-LSTR,Consumer Services,Lestre
-MAG,Consumer Services,Monoprix
-MGR,Consumer Services,Magasin Général
-MIP,Real Estate,MIP
-MNP,Industrials,Manufacture de Panneaux
-MPBS,Financial Services,Modern Leasing
-NAKL,Consumer Services,Nakl
+LSTR,Consumer Goods,Electrostar
+MAG,Consumer Services,Magasin General
+MGR,Consumer Services,SOTUMAG
+MIP,Consumer Services,MIP
+MNP,Consumer Services,Nouvelle Maison de la Ville de Tunis
+MPBS,Basic Materials,Manufacture De Panneaux Bois du Sud
+NAKL,Consumer Services,Ennakl
 NBL,Consumer Goods,New Body Line
-OTH,Industrials,OTH
-PGH,Consumer Goods,Poulina Group Holding
-PLAST,Industrials,Plastique
-PLTU,Financial Services,Placements de Tunisie
-PX1,,
-SAH,Insurance,Lilac Assurances
-SAM,Industrials,Société Africaine de Pneumatiques
-SCB,Utilities,Société Tunisienne du Gaz et de l'Électricité
-SERVI,Consumer Services,Services
-SFBT,Consumer Goods,Société de Fabrication des Boissons de Tunisie
-SIAME,Consumer Goods,Société Industrielle d'Appareils Ménagers
-SIMPA,Real Estate,Société Immobilière et de Participation
-SIPHA,Real Estate,Société Immobilière Tuniso-Saoudienne
-SITS,Real Estate,Société Immobilière Tuniso-Saoudienne (Services)
-SMART,Technology,Smart
-SMD,Consumer Services,Société Moderne de Distribution
-SOKNA,Industrials,Société Tunisienne de Verrerie
-SOMOC,Industrials,Société Moderne Céramique
-SOPAT,Basic Materials,Société de Papier Tunisienne
-SOTEM,Industrials,Société Tunisienne d'Énergie et de Métallurgie
-SOTET,Utilities,Société Tunisienne d'Énergie
-SOTUV,Industrials,Société Tunisienne d'Usinage et de Vente
+OTH,Industrials,One Tech Holding
+PGH,Financials,Poulina Group Holding
+PLAST,Industrials,Officeplast
+PLTU,Financials,Placements de Tunisie
+SAH,Consumer Goods,Societe d'Articles Hygieniques
+SAM,Consumer Goods,Meubles Intérieurs
+SCB,Industrials,Societe Ciments de Bizerte
+SERVI,Industrials,Servicom
+SFBT,Consumer Goods,Societe Frigorifique et Brasserie de Tunis
+SIAME,Industrials,SIAME
+SIMPA,Financials,Societe Immobiliere et de Participation
+SIPHA,Health Care,SIPHAT
+SITS,Financials,Societe Immobiliere Tuniso-Seoudienne
+SMART,Technology,Smart Tunisie
+SMD,Consumer Goods,SANIMED
+SOKNA,Financials,Essoukna
+SOMOC,Industrials,Societe Moderne De Ceramique
+SOPAT,Industrials,Societe Tuniso Papier
+SOTEM,Industrials,SOTEMAIL
+SOTET,Telecommunications,SOTETEL
+SOTUV,Industrials,Societe Tunisienne De Verreries
 SPDIT,Industrials,Société de Promotion de Développement Industriel
 SPHAX,Consumer Services,Société Phénicia
-STA,Consumer Services,STA
-STAR,Insurance,Assurances Star
-STB,Consumer Goods,Société Tunisienne de Broderie
+STA,Consumer Services,Société Tunisienne d'Automobiles
+STAR,Financials,Societe Tunisienne d'Assurance et de Reassurances
+STB,Financials,Societe Tunisienne De Banque
 STEQ,Consumer Goods,Société Tunisienne d'Equipement
-STIP,Consumer Services,Société Tunisienne Itinéraire Postal
-STPAP,Basic Materials,Société Tuniso Papier
-STPIL,Industrials,Société Tunisienne de Pneumatiques
-TAIR,Consumer Services,Tunisie Air
+STIP,Consumer Goods,Societe Tunisienne des Industries de Pneumatiques
+STPAP,Industrials,SOTIPAPIER
+STPIL,Oil & Gas,SOTRAPIL
+TAIR,Consumer Services,Societe Tunisienne De L'Air
 TBIDX,,
-TGH,Consumer Services,Tyghe
-TINV,Financial Services,Tunisie Investissement
-TJARI,Consumer Services,Tunisie Jari
-TJL,Financial Services,Tunisie Leasing
-TLNET,Technology,Tunisie Net
-TLS,Financial Services,Tunisie Leasing & Factoring
+TGH,Industrials,Tawasol Group Holding
+TINV,Financials,Tunisie Investissement
+TJARI,Financials,Attijari Bank
+TJL,Financials,Attijari Leasing
+TLNET,Technology,Telnet Holding
+TLS,Financials,Tunisie Leasing
 TPR,Industrials,Tunisie Profiles Aluminium
-TRE,Real Estate,Tunisie Real Estate
-TVAL,Financial Services,Tunisie Valeur
-UADH,Insurance,Union Assurance Distribution Holding
-UBCI,Banking,Union Bancaire pour le Commerce et l'Industrie
-UIB,Banking,Union Internationale de Banques
-UMED,Financial Services,Union Méditerranéenne
-WIFAK,Banking,Wifak Bank
-XABYT,Technology,XABYT
+TRE,Financials,Tunis Re
+TVAL,Financials,Tunisie Valeur
+UADH,Consumer Services,Universal Auto Distributors
+UBCI,Financials,Union Bancaire pour le Commerce et l'Industrie
+UIB,Financials,Union Internationale de Banques
+UMED,Health Care,UNIMED
+WIFAK,Financials,Wifak International Bank
+XABYT,,
