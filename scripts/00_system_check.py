@@ -84,7 +84,7 @@ def check_scripts():
     scripts = [
         '01_load_kaggle_data.py',
         '02_scrape_ilboursa_daily.py',
-        '03_merge_data.py',
+        '03_merge_and_enrich_data.py',
         '04_scheduler.py'
     ]
     
