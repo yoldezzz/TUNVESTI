@@ -1,6 +1,6 @@
 ticker,sector,company
 AB,Financials,Amen Bank
-ADWYA,,
+ADWYA,Health Care,Adwya
 AETEC,Technology,AETEC
 AL,Basic Materials,Air Liquide Tunisie
 ALKIM,Basic Materials,Societe Chimique Alkimia
@@ -73,7 +73,6 @@ STIP,Consumer Goods,Societe Tunisienne des Industries de Pneumatiques
 STPAP,Industrials,SOTIPAPIER
 STPIL,Oil & Gas,SOTRAPIL
 TAIR,Consumer Services,Societe Tunisienne De L'Air
-TBIDX,,
 TGH,Industrials,Tawasol Group Holding
 TINV,Financials,Tunisie Investissement
 TJARI,Financials,Attijari Bank
@@ -88,4 +87,4 @@ UBCI,Financials,Union Bancaire pour le Commerce et l'Industrie
 UIB,Financials,Union Internationale de Banques
 UMED,Health Care,UNIMED
 WIFAK,Financials,Wifak International Bank
-XABYT,,
+XABYT,Technology,Hexabyte 
