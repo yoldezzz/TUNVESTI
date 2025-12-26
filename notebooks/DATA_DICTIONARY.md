@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 This document defines all data columns in the TUNVESTI datasets used for Power BI analysis.
 
@@ -18,7 +18,7 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 ---
 
-## 🎯 fact_stock_daily - Primary Fact Table
+## fact_stock_daily - Primary Fact Table
 
 **Purpose:** Main dataset for Power BI analysis. One row per stock per trading day.
 
@@ -131,7 +131,6 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 | **Definition** | **Total number of shares traded during the day** |
 | **Usage** | Liquidity analysis, volume trends, support/resistance confirmation |
 | **Calculation** | From source data |
-| **Notes** | Non-breaking space bug fixed during data quality. Now accurate. |
 
 ---
 
@@ -253,7 +252,7 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 ---
 
-## 📅 dim_date - Date Dimension Table
+## dim_date - Date Dimension Table
 
 **Purpose:** Time dimension for Power BI time intelligence and date-based filtering.
 
@@ -358,7 +357,7 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 ---
 
-## 📊 dim_stock - Stock Dimension Table
+## dim_stock - Stock Dimension Table
 
 **Purpose:** Stock reference data for filtering and grouping analysis by company.
 
@@ -408,7 +407,7 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 ---
 
-## 📊 enriched_data - Full Dataset (Reference)
+## enriched_data - Full Dataset (Reference)
 
 **Purpose:** Complete dataset with all intermediate columns. For reference and exploratory analysis only. NOT used in Power BI.
 
@@ -428,7 +427,7 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 ---
 
-## 📈 Data Quality Summary
+## Data Quality Summary
 
 ### Completeness by Column
 
@@ -452,65 +451,11 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 ---
 
-## 🔍 How to Use This Dictionary
 
-### For Power BI Developers:
-1. Use column definitions to understand what each field means
-2. Use "Usage" section to understand where to use each metric
-3. Check "Null Values" to understand which columns might have NaN
-4. Check "Calculation" to understand if column is raw or derived
-
-### For Analysts:
-1. Check "Definition" for clear explanation
-2. Check "Example" to see sample values
-3. Check "Usage" to understand what analysis each column enables
-4. Check "Notes" for important caveats
-
-### For Data Engineers:
-1. Check "Data Type" to ensure correct formatting
-2. Check "Source" to understand where data comes from
-3. Check "Calculation" for formula details
-4. Check "Validation" for quality rules
-
----
-
-## 📝 Column Usage by Analysis Type
-
-### Portfolio Analysis
-- **Use:** close, daily_return_pct, volatility_30d, sector
-- **Skip:** market_cap_m (too sparse)
-
-### Risk Assessment
-- **Use:** volatility_30d, daily_return_pct, tunindex_close
-- **Skip:** dividend_yield_pct (if risk-focused)
-
-### Income Analysis
-- **Use:** dividend_yield_pct, close, ticker
-- **Skip:** volatility_30d (if income-focused)
-
-### Market Timing
-- **Use:** daily_return_pct, avg_volume_30d, tunindex_close
-- **Skip:** dividend_yield_pct
-
-### Sector Analysis
-- **Use:** sector, daily_return_pct, avg_volume_30d
-- **Skip:** market_cap_m
-
-### Fundamental Analysis (Limited)
-- **Use:** close (stock price)
-- **Missing:** Earnings, P/E, ROE (not in current data - Phase 2)
-
----
-
-## 🚀 Related Documentation
+## Related Documentation
 
 - **[ETL_PIPELINE.md](ETL_PIPELINE.md)** - How data was created
 - **[DATA_QUALITY_REVIEW.md](DATA_QUALITY_REVIEW.md)** - Detailed audit
 - **[POWERBI_IMPLEMENTATION_GUIDE.md](POWERBI_IMPLEMENTATION_GUIDE.md)** - How to use in Power BI
 - **[CLEANUP_AND_FUTURE_STRATEGY.md](CLEANUP_AND_FUTURE_STRATEGY.md)** - Future enhancements
 
----
-
-**Last Updated:** December 23, 2025  
-**Version:** 1.0 (Complete)  
-**Status:** Ready for Power BI Implementation ✅
