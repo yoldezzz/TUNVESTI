@@ -1,11 +1,11 @@
 # TUNVESTI ETL Pipeline - Complete Documentation
 **Project:** Business Intelligence Dashboard for Tunisian Stock Market (BVMT)  
 **Created:** December 23, 2025  
-**Status:** ✅ Production Ready
+**Status:** Production Ready
 
 ---
 
-## 📋 PROJECT OVERVIEW
+## PROJECT OVERVIEW
 
 ### **Objective**
 Build a comprehensive stock analysis platform for Tunisia's BVMT market that:
@@ -22,17 +22,17 @@ Build a comprehensive stock analysis platform for Tunisia's BVMT market that:
 | Current | ~90 stocks | BVMT/Ilboursa | All active |
 
 ### **Key Metrics Available**
-✅ OHLCV (Open, High, Low, Close, Volume)  
-✅ Daily Returns (%)  
-✅ 30-day Rolling Volatility (annualized)  
-✅ Dividend Yield (%)  
-✅ Market Cap  
-✅ TUNINDEX Index data  
-✅ Stock Sectors & Company Names  
+- OHLCV (Open, High, Low, Close, Volume)  
+- Daily Returns (%)  
+- 30-day Rolling Volatility (annualized)  
+- Dividend Yield (%)  
+- Market Cap  
+- TUNINDEX Index data  
+- Stock Sectors & Company Names  
 
 ---
 
-## 🔄 ETL PIPELINE ARCHITECTURE
+## ETL PIPELINE ARCHITECTURE
 
 ### **Five-Script Pipeline**
 
@@ -50,7 +50,7 @@ POWER BI Dashboard
 
 ---
 
-## 📄 SCRIPT 01: Load Kaggle Historical Data
+## SCRIPT 01: Load Kaggle Historical Data
 
 **File:** `scripts/01_load_kaggle_data.py`  
 **Purpose:** Load 2010-2022 historical stock data from Kaggle CSV files  
@@ -85,7 +85,7 @@ cd "C:\Users\NOUIRA\Documents\junior\BI project"
 
 ---
 
-## 📊 SCRIPT 02: Scrape Daily ilboursa Data
+## SCRIPT 02: Scrape Daily ilboursa Data
 
 **File:** `scripts/02_scrape_ilboursa_daily.py`  
 **Purpose:** Daily web scraper collecting real-time market data from ilboursa.com  
@@ -101,10 +101,10 @@ cd "C:\Users\NOUIRA\Documents\junior\BI project"
 2. Navigate to ilboursa.com market quotes page
 3. Extract 90 stocks with JavaScript rendering
 4. **Data Quality Fixes:**
-   - ✅ Remove non-breaking spaces (`\xa0` from HTML `&nbsp;`)
-   - ✅ Handle French number format (commas → dots)
-   - ✅ Parse volatility with +/- signs (3.13% format)
-   - ✅ Parse market cap in millions (0.7M, 176.3M)
+   - Remove non-breaking spaces (`\xa0` from HTML `&nbsp;`)
+   - Handle French number format (commas → dots)
+   - Parse volatility with +/- signs (3.13% format)
+   - Parse market cap in millions (0.7M, 176.3M)
 5. Validate OHLCV integrity
 6. Save to timestamped CSV
 
@@ -117,10 +117,10 @@ output/daily_updates/updated_stocks_YYYY-MM-DD.csv
 ```
 
 ### Data Quality Checks Built In
-- ✅ High >= Low (OHLCV integrity)
-- ✅ Volume > 0 (sanity check)
-- ✅ Price > 0 (not negative/NaN)
-- ✅ No duplicate tickers per day
+- High >= Low (OHLCV integrity)
+- Volume > 0 (sanity check)
+- Price > 0 (not negative/NaN)
+- No duplicate tickers per day
 
 ### Example Run
 ```bash
@@ -138,7 +138,7 @@ Date         Ticker  Open    High    Low     Close   Volume  Volatility  Market_
 
 ---
 
-## 🔗 SCRIPT 03: Merge & Enrich Data ⭐ CRITICAL SCRIPT
+## SCRIPT 03: Merge & Enrich Data (CRITICAL SCRIPT)
 
 **File:** `scripts/03_merge_and_enrich_data.py`  
 **Purpose:** Integrate all data sources + calculate derived metrics  
@@ -191,7 +191,7 @@ Dividends (309 entries) → Convert to numeric
 ```
 Formula: (Close_today - Close_yesterday) / Close_yesterday × 100
 Where:   Per stock
-Status:  ✅ 99.9% complete (144,636 values)
+Status: 99.9% complete (144,636 values)
 Note:    First row per stock is NaN
 ```
 
@@ -199,7 +199,7 @@ Note:    First row per stock is NaN
 ```
 Formula: StdDev(Daily_Return[last 30 days]) × √252
 Where:   √252 = annualization factor (trading days/year)
-Status:  ✅ 98.3% complete (142,238 values)
+Status: 98.3% complete (142,238 values)
 Note:    Needs 30 days of history, so starts ~1 month in
 ```
 
@@ -207,7 +207,7 @@ Note:    Needs 30 days of history, so starts ~1 month in
 ```
 Formula: (Annual_Dividend_Per_Share / Close_Price) × 100
 Where:   Annual dividend from dividends CSV
-Status:  ✅ 100% complete (but 0 where no dividend paid)
+Status: 100% complete (but 0 where no dividend paid)
 Note:    Only positive for 21,769 rows with dividend data
 ```
 
@@ -215,7 +215,7 @@ Note:    Only positive for 21,769 rows with dividend data
 ```
 Formula: Mean(Volume[last 30 days])
 Where:   Rolling average
-Status:  ✅ 98.3% complete (142,320 values)
+Status: 98.3% complete (142,320 values)
 Note:    Useful for liquidity analysis
 ```
 
@@ -223,7 +223,7 @@ Note:    Useful for liquidity analysis
 ```
 Formula: (TUNINDEX_Close_today - TUNINDEX_Close_yesterday) / TUNINDEX_Close_yesterday × 100
 Where:   Market index, same as stock returns
-Status:  ✅ 99.6% complete (144,286 values)
+Status: 99.6% complete (144,286 values)
 Note:    For correlation & beta calculations
 ```
 
@@ -274,22 +274,22 @@ cd "C:\Users\NOUIRA\Documents\junior\BI project"
 
 **Console Output:**
 ```
-✓ Loaded historical: 146,246 rows
-✓ Loaded daily: 90 rows
-✓ Merged OHLCV: 144,727 rows
-✓ Added TUNINDEX: 144,147 rows (99.6%)
-✓ Added sectors: 80,822 rows
-✓ Added dividends: 21,769 non-zero
-✓ Calculated daily_return: 144,636 values (99.9%)
-✓ Calculated volatility_30d: 142,238 values (98.3%)
-✓ Saved fact_stock_daily.csv (15.68 MB)
-✓ Saved dim_date.csv (0.11 MB)
-✓ Saved dim_stock.csv (0.01 MB)
+- Loaded historical: 146,246 rows
+- Loaded daily: 90 rows
+- Merged OHLCV: 144,727 rows
+- Added TUNINDEX: 144,147 rows (99.6%)
+- Added sectors: 80,822 rows
+- Added dividends: 21,769 non-zero
+- Calculated daily_return: 144,636 values (99.9%)
+- Calculated volatility_30d: 142,238 values (98.3%)
+- Saved fact_stock_daily.csv (15.68 MB)
+- Saved dim_date.csv (0.11 MB)
+- Saved dim_stock.csv (0.01 MB)
 ```
 
 ---
 
-## ⏰ SCRIPT 04: Auto-Scheduler
+## SCRIPT 04: Auto-Scheduler
 
 **File:** `scripts/04_scheduler.py`  
 **Purpose:** Automate daily execution of Scripts 02 + 03  
@@ -322,7 +322,7 @@ cd "C:\Users\NOUIRA\Documents\junior\BI project"
 
 ---
 
-## 📁 PROJECT STRUCTURE
+## PROJECT STRUCTURE
 
 ```
 BI project/
@@ -341,7 +341,7 @@ BI project/
 │  └─ kaggle_source/                     (88 original Kaggle CSVs - backup)
 │
 ├─ output/
-│  ├─ fact_stock_daily.csv       (⭐ PRIMARY: for Power BI)
+│  ├─ fact_stock_daily.csv       (PRIMARY: for Power BI)
 │  ├─ dim_date.csv               (Trading dates dimension)
 │  ├─ dim_stock.csv              (Stocks dimension)
 │  ├─ enriched_data.csv          (All columns, for analysis)
@@ -358,265 +358,3 @@ BI project/
 └─ .venv/                        (Python virtual environment)
 ```
 
----
-
-## 🔍 DATA QUALITY & VALIDATION
-
-### **Input Validation**
-- ✅ All historical files exist
-- ✅ Kaggle data loaded completely (88 stocks)
-- ✅ Date columns converted to datetime
-- ✅ OHLC prices are numeric and positive
-- ✅ Volume >= 0
-
-### **Integration Validation**
-- ✅ No duplicate (Date, Ticker) rows in merged data
-- ✅ High >= Low (OHLCV integrity) → 100% pass
-- ✅ TUNINDEX merged for 99.6% of rows
-- ✅ Sectors found for 88.6% of rows (91 total, some missing)
-- ✅ Dividends matched for all valid (Ticker, Year)
-
-### **Output Validation**
-- ✅ fact_stock_daily.csv: 144,727 rows ✓
-- ✅ dim_date.csv: 3,236 unique dates ✓
-- ✅ dim_stock.csv: 91 stocks ✓
-- ✅ No NaN in critical columns (date, ticker, OHLCV)
-- ✅ Metrics complete at 98-100%
-
-### **Warnings (Expected)**
-⚠️ Market_Cap_M: Only 88 values (0.1%) - data from recent scrapes only  
-⚠️ Some stocks missing sector assignment → Handle in Power BI
-
----
-
-## 📊 STATISTICS AT A GLANCE
-
-| Metric | Value | Status |
-|--------|-------|--------|
-| **Total Records** | 144,727 | ✅ Complete |
-| **Date Range** | 2010-2025 (15+ years) | ✅ Extensive |
-| **Unique Stocks** | 91 | ✅ All BVMT |
-| **Trading Dates** | 3,236 days | ✅ Daily granularity |
-| **Daily Return** | 99.9% complete | ✅ For portfolio returns |
-| **Volatility 30d** | 98.3% complete | ✅ Risk metric |
-| **Dividend Yield** | 100% calculated (0 where NA) | ✅ Income analysis |
-| **TUNINDEX Integration** | 99.6% merged | ✅ Benchmark included |
-| **Data Size** | 15.68 MB (fact table) | ✅ Efficient |
-
----
-
-## 🚀 EXECUTION WORKFLOW
-
-### **Day 1: Initial Setup**
-```
-1. Run Script 00: Check environment
-   → Verify Python, packages, paths
-   
-2. Run Script 01: Load historical
-   → Creates data/historical_stocks_2010_2022.csv
-   
-3. Run Script 02: First daily scrape
-   → Creates output/daily_updates/updated_stocks_2025-12-23.csv
-   
-4. Run Script 03: First merge
-   → Creates fact_stock_daily.csv, dim_date.csv, dim_stock.csv
-   
-5. Load fact_stock_daily.csv into Power BI
-   → Create star schema relationships
-   → Build dashboard
-```
-
-### **Day 2+: Daily Automatic**
-```
-@ 3:00 PM:
-  Script 02 runs → Scrapes today's data → output/daily_updates/updated_stocks_YYYY-MM-DD.csv
-  Script 03 runs → Merges all data → fact_stock_daily.csv updated
-  Power BI refreshes → Dashboard shows latest data
-```
-
-### **Manual Execution (Testing)**
-```bash
-# Check system
-python scripts/00_system_check.py
-
-# Load historical once
-python scripts/01_load_kaggle_data.py
-
-# Test daily scrape
-python scripts/02_scrape_ilboursa_daily.py
-
-# Merge and enrich
-python scripts/03_merge_and_enrich_data.py
-
-# Verify outputs in output/ folder
-ls output/*.csv
-```
-
----
-
-## 📋 WHAT WAS COMPLETED ✅
-
-### **Data Acquisition**
-- ✅ Kaggle historical data loaded (187,987 rows, 2010-2022)
-- ✅ Daily web scraper built (ilboursa.com, 90 stocks, JavaScript rendering)
-- ✅ Data quality fixes applied:
-  - Non-breaking spaces handling
-  - French decimal format conversion
-  - Volatility sign parsing
-  - Market cap in millions parsing
-
-### **Data Integration**
-- ✅ Historical + daily data merged (144,727 rows)
-- ✅ TUNINDEX index added (market benchmark)
-- ✅ Sector/company data joined (91 companies)
-- ✅ Dividend data merged (21,769 dividend records)
-- ✅ Duplicates removed (by Date+Ticker)
-
-### **Metric Derivation**
-- ✅ Daily Returns (%) — 99.9% complete
-- ✅ 30-Day Volatility (annualized) — 98.3% complete
-- ✅ Dividend Yield (%) — 100% calculated
-- ✅ Average Volume 30-Day — 98.3% complete
-- ✅ TUNINDEX Daily Returns — 99.6% complete
-
-### **Output Delivery**
-- ✅ fact_stock_daily.csv (15.68 MB, star schema)
-- ✅ dim_date.csv (3,236 trading dates)
-- ✅ dim_stock.csv (91 stocks with sectors)
-- ✅ enriched_data.csv (all 22 columns for analysis)
-
-### **Production Readiness**
-- ✅ Error handling & logging in all scripts
-- ✅ Data validation checks built in
-- ✅ Scheduler ready for deployment
-- ✅ Documentation complete
-
----
-
-## 📋 WHAT'S MISSING / TO ADD LATER ⏳
-
-### **Data Gaps (Deferred)**
-- ❌ **2023-2024 Historical Data** — Attempted but incomplete. Use current dataset or collect manually later
-- ❌ **Earnings Data** — P/E ratios require quarterly earnings
-- ❌ **Balance Sheet Data** — ROE, debt ratios require financial statements
-- ❌ **Macro Data** — Inflation, GDP, interest rates (requires Trading Economics API)
-
-### **Calculated Metrics (Not Yet Implemented)**
-- ❌ **P/E Ratio** — Requires earnings per share (EPS)
-- ❌ **ROE (Return on Equity)** — Requires net income & equity
-- ❌ **Debt/Equity Ratio** — Requires balance sheet
-- ❌ **Beta** — Requires regression vs TUNINDEX
-- ❌ **Correlation Matrix** — Can be built once Power BI loaded
-- ❌ **RSI (Relative Strength Index)** — Technical indicator (can add)
-- ❌ **Moving Averages** (20, 50, 200) — Technical indicators (can add)
-- ❌ **Bollinger Bands** — Technical indicator (can add)
-
-### **Data Sources (Not Yet Integrated)**
-- ❌ **BVMT Financial Statements** — For P/E, ROE, Debt ratios
-- ❌ **Trading Economics API** — For macro data
-- ❌ **Option Chain Data** — For volatility smiles
-- ❌ **Sector Indices** — For sector outperformance analysis
-
-### **Dashboard Features (To Build in Power BI)**
-- ❌ **Answer 14 Business Questions:**
-  1. Portfolio optimization recommendations?
-  2. Highest/lowest returns by sector?
-  3. Best dividend yield stocks?
-  4. Correlation between stocks?
-  5. Market cap distribution?
-  6. Volatility clustering?
-  7. Sector rotation opportunities?
-  8. Momentum stocks?
-  9. Value stocks?
-  10. Risk-adjusted returns (Sharpe)?
-  11. 30-day trend predictions?
-  12. Sector strength?
-  13. Liquidity analysis?
-  14. Historical returns comparison?
-
----
-
-## 🔧 TROUBLESHOOTING
-
-### **Script 02: Scraper Fails**
-```
-Problem: "Selenium timeout" or "Element not found"
-Cause:   Website structure changed or internet slow
-Fix:     
-  1. Check ilboursa.com manually (open in browser)
-  2. Update CSS selectors in script
-  3. Increase timeout: driver.implicitly_wait(10)
-  4. Try again next market day
-```
-
-### **Script 03: Merge Incomplete**
-```
-Problem: "KeyError" or "Missing column"
-Cause:   Input file format changed
-Fix:
-  1. Check data/historical_stocks_2010_2022.csv headers
-  2. Check output/daily_updates/ latest file exists
-  3. Check data/sector_mapping.csv has 'ticker' column
-  4. Check data/dividend20217-2024.csv format
-```
-
-### **Power BI Won't Refresh**
-```
-Problem: "Connection failed" to CSV
-Cause:   File in use by Script 03 at 3 PM
-Fix:
-  1. Enable auto-refresh after 3:05 PM
-  2. Or use SQL Server/database instead of CSV
-  3. Or move CSV to different location (not output/)
-```
-
----
-
-## 📞 NEXT STEPS
-
-### **Short-term (This Week)**
-1. ✅ Load `fact_stock_daily.csv` into Power BI
-2. ✅ Create star schema relationships (date, ticker)
-3. ✅ Build sample dashboard with top metrics
-4. ✅ Test manual Script 02+03 execution daily
-
-### **Medium-term (Next 2 Weeks)**
-1. Deploy Script 04 scheduler for auto-runs
-2. Add technical indicators (MA20/50/200, RSI, MACD)
-3. Build remaining Power BI visuals
-4. Create drill-down features (date → ticker → candlestick)
-
-### **Long-term (Month 2+)**
-1. Source financial data (P/E, ROE, debt)
-2. Integrate macro data (inflation, rates)
-3. Add predictions/ML models
-4. Publish dashboard to stakeholders
-
----
-
-## 📝 FILE VERSIONS
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2025-12-23 | Initial ETL pipeline complete, 144,727 rows, 5 metrics |
-| TBD | TBD | Add technical indicators, financial ratios, macro data |
-
----
-
-## ✅ CHECKLIST FOR DEPLOYMENT
-
-- [x] All input files in place
-- [x] Scripts 01-03 tested and working
-- [x] Data validation passing
-- [x] Output files created and validated
-- [x] Documentation complete
-- [ ] Script 04 tested on schedule
-- [ ] Power BI dashboard built
-- [ ] Scheduler deployed to production
-- [ ] Stakeholders notified
-
----
-
-**Questions?** Refer to individual script comments or check `docs/DATA_DICTIONARY.md` for column definitions.
-
-**Good luck! 🚀**

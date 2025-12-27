@@ -425,37 +425,4 @@ This document defines all data columns in the TUNVESTI datasets used for Power B
 
 **Usage:** For data exploration, validation, and detailed audits. Not needed for Power BI.
 
----
-
-## Data Quality Summary
-
-### Completeness by Column
-
-| Column | Complete | Null | % Complete | Status |
-|--------|----------|------|------------|--------|
-| **date** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **ticker** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **open** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **high** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **low** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **close** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **volume** | 144,727 | 0 | 100.0% | ✅ Perfect |
-| **daily_return_pct** | 144,636 | 91 | 99.94% | ✅ Expected (first row/stock) |
-| **volatility_30d** | 142,238 | 2,489 | 98.28% | ✅ Expected (30-day warmup) |
-| **dividend_yield_pct** | 144,727 | 0 | 100.0% | ✅ 0 for non-payers is correct |
-| **avg_volume_30d** | 142,320 | 2,407 | 98.34% | ✅ Expected (30-day warmup) |
-| **tunindex_close** | 144,147 | 580 | 99.60% | ✅ Expected (index started late) |
-| **market_cap_m** | 88 | 144,639 | 0.06% | ⚠️ Expected (source limitation) |
-
-### Data Grade: **A+ (Excellent)**
-
----
-
-
-## Related Documentation
-
-- **[ETL_PIPELINE.md](ETL_PIPELINE.md)** - How data was created
-- **[DATA_QUALITY_REVIEW.md](DATA_QUALITY_REVIEW.md)** - Detailed audit
-- **[POWERBI_IMPLEMENTATION_GUIDE.md](POWERBI_IMPLEMENTATION_GUIDE.md)** - How to use in Power BI
-- **[CLEANUP_AND_FUTURE_STRATEGY.md](CLEANUP_AND_FUTURE_STRATEGY.md)** - Future enhancements
 
